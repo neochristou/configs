@@ -262,4 +262,9 @@ bindsym $mod+greater exec "sp next"
 bindsym $mod+less exec "sp prev"
 bindsym $mod+slash exec "sp play"
 
+# Open new terminal at current directory
+bindsym $mod+BackSpace exec $HOME/.config/i3/i3_shell.sh
+
+bindsym $mod+i exec i3-sensible-terminal --working-directory=/media/neo/Storage/mozilla-central
+
 for_window [class="^.*"] border pixel 0
