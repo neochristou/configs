@@ -58,8 +58,8 @@ font-1 = unifont:fontformat=truetype:size=10:antialias=true;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = 
-modules-right = filesystem pulseaudio xkeyboard memory cpu battery temperature network date 
+modules-center = xwindow 
+modules-right = network filesystem xbacklight pulseaudio xkeyboard memory cpu battery temperature date 
 
 tray-position = right
 tray-padding = 1
@@ -81,7 +81,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title:0:50:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -142,7 +142,7 @@ index-sort = true
 wrapping-scroll = false
 
 ws-icon-0 = "4;4"
-ws-icon-1 = "Email;Email"
+ws-icon-1 = "Email;"
 ws-icon-2 = ";"
 ws-icon-3 = ";"
 ws-icon-4 = ";"
@@ -198,9 +198,13 @@ label-song-ellipsis = true
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <label> <bar>
+format = <ramp>
 label = BL
-
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
 bar-width = 10
 bar-indicator = |
 bar-indicator-foreground = #fff
@@ -290,12 +294,16 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume> <ramp-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
+
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
