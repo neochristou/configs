@@ -112,7 +112,8 @@ set $ws6 "6"
 set $ws7 "Email"
 set $ws8 ""
 set $ws9 "KeePass"
-set $ws10 ""
+#
+set $ws10 "Spotify"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -209,6 +210,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # }
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launchlistener.sh
 
 #bind lock screen
 #bindsym $mod+shift+x exec i3lock --color "$bg-color"
