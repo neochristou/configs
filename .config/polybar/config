@@ -58,8 +58,8 @@ font-1 = unifont:fontformat=truetype:size=10:antialias=true;0
 font-2 = siji:pixelsize=10;1
 
 modules-left = i3
-modules-center = xwindow 
-modules-right = network filesystem xbacklight pulseaudio xkeyboard memory cpu battery temperature date 
+modules-center = xwindow spotify 
+modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu battery temperature network date 
 
 tray-position = right
 tray-padding = 1
@@ -81,7 +81,7 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:50:...%
+label = %title:0:40:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -403,14 +403,12 @@ ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/spotify]
-type = custom/ipc
-hook-0 = echo ""
-hook-1 = python3 ~/scripts/spotify/spotify_status.py
-initial = 1
-format-padding = 4
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python ~/.config/polybar/scripts/spotify_status.py -t 20 -f '{artist}: {song}'
 format-underline = #1db954
-line-size = 1
-click-left = i3-msg '[class="Spotify"] focus'
 
 [module/powermenu]
 type = custom/menu
