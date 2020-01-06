@@ -123,3 +123,8 @@ export NVM_DIR="/home/neo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+export PROMPT_COMMAND="pwd > /tmp/whereami"
+
+xset +fp /home/neo/.local/share/fonts
+xset fp rehash
