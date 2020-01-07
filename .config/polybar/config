@@ -141,14 +141,16 @@ format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
 
-ws-icon-0 = "4;4"
-ws-icon-1 = "Email;"
-ws-icon-2 = ";"
-ws-icon-3 = ";"
-ws-icon-4 = ";"
-ws-icon-5 = "KeePass;KeePass"
-ws-icon-6 = ";"
-ws-icon-7 = "Spotify;"
+ws-icon-0 = ";"
+ws-icon-1 = ";"
+ws-icon-2 = ";"
+ws-icon-3 = "4;4"
+ws-icon-4 = "Notes;"
+ws-icon-5 = "6;6"
+ws-icon-6 = "Email;"
+ws-icon-7 = ";"
+ws-icon-8 = "KeePass;KeePass"
+ws-icon-9 = "Spotify;"
 
 ; Only show workspaces on the same output as the bar
 ;pin-workspaces = true
@@ -294,16 +296,16 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <ramp-volume>
+format-volume = <label-volume>
 label-volume = VOL %percentage%%
 label-volume-foreground = ${root.foreground}
 
 label-muted = 🔇 muted
 label-muted-foreground = #666
 
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
+;ramp-volume-0 = 🔈
+;ramp-volume-1 = 🔉
+;ramp-volume-2 = 🔊
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
@@ -407,7 +409,7 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = python ~/.config/polybar/scripts/spotify_status.py -t 20 -f '{artist}: {song}'
+exec = python ~/.config/polybar/scripts/spotify_status.py -t 15 -f '{song}: {artist}'
 format-underline = #1db954
 
 [module/powermenu]
