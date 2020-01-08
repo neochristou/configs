@@ -7,7 +7,6 @@
 
 # -------------------------- Change keyboard layout ---------------------------+
 #exec_always "setxkbmap -option 'grp:alt_shift_toggle' -layout us,gr -variant ,qwerty"
-bindsym $mod+space exec ~/.config/i3/i3-keyboard-layout/i3-keyboard-layout cycle us gr
 
 #gaps settings
 
@@ -39,7 +38,7 @@ font pango:OpenSans 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -211,6 +210,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launchlistener.sh
+exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
 
 #bind lock screen
 #bindsym $mod+shift+x exec i3lock --color "$bg-color"
@@ -248,20 +248,8 @@ exec feh --bg-scale /usr/share/backgrounds/white_ring.jpg
 exec thunderbird
 exec setxkbmap -option ctrl:ralt_rctrl
 
-#interactive screenshot by pressing printscreen
-bindsym Print exec flameshot gui
-#crop-area screenshot by pressing Mod + printscreen
-bindsym $mod+Print exec flameshot full
-
 #binds
 
-bindsym $mod+o exec gedit ~/.config/i3/config
-bindsym $mod+u exec terminator -e gotop-cjbassi
-bindsym $mod+g exec firefox
-bindsym $mod+m exec spotify 
-bindsym $mod+n exec /usr/bin/turtl
-bindsym $mod+b exec nautilus
-bindsym $mod+y exec firefox
 bindsym $mod+greater exec "sp next"
 bindsym $mod+less exec "sp prev"
 bindsym $mod+slash exec "sp play"

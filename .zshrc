@@ -12,7 +12,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.histfile
 
-export TERM=xterm
+export TERMINAL=/usr/bin/i3-sensible-terminal
 
 # Basic auto/tab complete:
 autoload -U compinit

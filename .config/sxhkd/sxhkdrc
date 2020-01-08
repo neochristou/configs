@@ -1,0 +1,44 @@
+# Basic binds
+
+super + o
+	gedit ~/.config/i3/config
+super + u
+	terminator -e gotop-cjbassi
+super + g
+	firefox
+super + m
+	spotify 
+super + n
+	/usr/bin/turtl
+super + b
+	nautilus
+#NOT WORKING
+# super + greater
+# 	exec "sp next"
+# super + less
+# 	exec "sp prev"	
+# super + slash
+# 	exec "sp play"
+super + Return
+	$TERMINAL
+super + shift + q
+	kill
+
+# Restart network manager DOESNT WORK
+super + shift + o
+	sudo systemctl restart network-manager.service
+
+# Change keyboard language
+super + space
+	~/.config/i3/i3-keyboard-layout/i3-keyboard-layout cycle us gr
+
+# Open new terminal at current directory
+super + BackSpace
+	$HOME/.config/i3/i3_shell.sh
+
+#interactive screenshot by pressing printscreen
+Print
+	flameshot gui
+#crop-area screenshot by pressing Mod + printscreen
+super + Print
+	flameshot full
