@@ -8,13 +8,23 @@ let mapleader = ","
 map <C-o> :NERDTreeToggle<CR>
 map ; :Files<CR>
 map <C-a> <esc>ggVG<CR>
+
+" File navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <leader>s :!clear && shellcheck %<CR>
-" Need to add compiler shortcut from luke smith
 
+" Shellcheck current script
+map <leader>k :!clear && shellcheck %<CR>
+
+" Run spellcheck
+map <leader>s :setlocal spell!<CR>
+
+" Set spelling language to greek
+map <leader>l :set spelllang=el<CR>
+
+" Need to add compiler shortcut from luke smithd
 
 " Basic 
 set number relativenumber
