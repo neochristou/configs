@@ -248,12 +248,6 @@ exec feh --bg-scale /usr/share/backgrounds/white_ring.jpg
 exec thunderbird
 exec setxkbmap -option ctrl:ralt_rctrl
 
-#binds
-
-bindsym $mod+greater exec "sp next"
-bindsym $mod+less exec "sp prev"
-bindsym $mod+slash exec "sp play"
-
 # Open new terminal at current directory
 bindsym $mod+BackSpace exec $HOME/.config/i3/i3_shell.sh
 

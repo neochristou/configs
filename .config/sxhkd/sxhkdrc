@@ -12,13 +12,12 @@ super + n
 	/usr/bin/turtl
 super + b
 	nautilus
-#NOT WORKING
-# super + greater
-# 	exec "sp next"
-# super + less
-# 	exec "sp prev"	
-# super + slash
-# 	exec "sp play"
+super + period 
+	exec sp next
+super + comma 
+	exec sp prev
+super + slash 
+	exec sp play 
 super + Return
 	$TERMINAL
 super + shift + q
