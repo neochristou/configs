@@ -15,6 +15,11 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+" Map Esc to Caps Lock when entering vim and remap it back to normal when
+" exiting
+au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
+
 " Shellcheck current script
 map <leader>k :!clear && shellcheck %<CR>
 
@@ -27,6 +32,10 @@ map <leader>l :set spelllang=el<CR>
 " Need to add compiler shortcut from luke smithd
 
 " Basic 
+
+" Ignore search case by default
+set ic
+
 set number relativenumber
 set wildmode=longest,list,full
 set splitbelow splitright
