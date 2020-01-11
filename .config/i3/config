@@ -141,7 +141,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 #assign programs to workspaces
 assign [class="jetbrains-clion"] $ws3
 assign [class="Turtl"] $ws5
-assign [class="Thunderbird"] $ws7
+assign [class="Neomutt"] $ws7
 assign [class="TelegramDesktop"] $ws8
 assign [class="KeePass2"] $ws9
 assign [class="Spotify"] $ws10
@@ -248,7 +248,7 @@ exec_always --no-startup-id nm-applet
 exec compton
 exec feh --bg-scale /usr/share/backgrounds/white_ring.jpg
 #exec wal -i /usr/share/backgrounds/ubuntustudio_disco_dingo_1080.jpg 
-exec thunderbird
+exec st -c Neomutt -e neomutt
 exec setxkbmap -option ctrl:ralt_rctrl
 
 # Open new terminal at current directory

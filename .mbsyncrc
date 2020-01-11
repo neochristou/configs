@@ -1,0 +1,99 @@
+IMAPStore hotmail-remote
+Host imap-mail.outlook.com
+Port  993
+User nio_christou@hotmail.com
+PassCmd "pass mutt-wizard-hotmail"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hotmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/hotmail/
+Inbox ~/.local/share/mail/hotmail/INBOX
+Flatten .
+
+Channel hotmail
+Expunge Both
+Master :hotmail-remote:
+Slave :hotmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+# End profile
+
+IMAPStore n1ofalken-remote
+Host imap.gmail.com
+Port  993
+User n1ofalken@gmail.com
+PassCmd "pass mutt-wizard-n1ofalken"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore n1ofalken-local
+Subfolders Verbatim
+Path ~/.local/share/mail/n1ofalken/
+Inbox ~/.local/share/mail/n1ofalken/INBOX
+Flatten .
+
+Channel n1ofalken
+Expunge Both
+Master :n1ofalken-remote:
+Slave :n1ofalken-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+# End profile
+
+IMAPStore gmail-remote
+Host imap.gmail.com
+Port  993
+User neophytos.christou19@gmail.com
+PassCmd "pass mutt-wizard-gmail"
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore gmail-local
+Subfolders Verbatim
+Path ~/.local/share/mail/gmail/
+Inbox ~/.local/share/mail/gmail/INBOX
+Flatten .
+
+Channel gmail
+Expunge Both
+Master :gmail-remote:
+Slave :gmail-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore cs-remote
+Host imap.cs.ucy.ac.cy 
+Port  143
+User nchris23
+PassCmd "pass mutt-wizard-cs"
+SSLType None 
+
+MaildirStore cs-local
+Subfolders Verbatim
+Path ~/.local/share/mail/cs/
+Inbox ~/.local/share/mail/cs/INBOX
+Flatten .
+
+Channel cs
+Expunge Both
+Master :cs-remote:
+Slave :cs-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 1000
+ExpireUnread no
+# End profile
+

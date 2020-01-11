@@ -1,0 +1,20 @@
+[database]
+path=/home/neo/.local/share/mail
+
+[user]
+name=Neophytos Christou
+primary_email=nio_christou@hotmail.com
+other_email=nchris23@cs.ucy.ac.cy;n1ofalken@gmail.com;neophytos.christou19@gmail.com;
+
+[new]
+tags=unread;inbox;
+ignore=
+
+[search]
+exclude_tags=spam;
+
+[maildir]
+synchronize_flags=true
+
+[crypto]
+gpg_path=gpg
