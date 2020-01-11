@@ -12,7 +12,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.histfile
 
-export TERMINAL=/usr/bin/i3-sensible-terminal
+export TERMINAL=/home/neo/st/st
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -76,13 +76,14 @@ bindkey '^e' edit-command-line
 export NVM_DIR="/home/neo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-
-export PROMPT_COMMAND="pwd > /tmp/whereami"
+# Precmd : to emulate bash's PROMPT_COMMAND variable
+precmd() {pwd > /tmp/whereami}
 
 xset +fp /home/neo/.local/share/fonts
 xset fp rehash
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

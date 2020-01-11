@@ -252,8 +252,9 @@ exec thunderbird
 exec setxkbmap -option ctrl:ralt_rctrl
 
 # Open new terminal at current directory
+# Doesn't work when pressing keybind, works when called from terminal. Need to test
 bindsym $mod+BackSpace exec $HOME/.config/i3/i3_shell.sh
 
-bindsym $mod+i exec i3-sensible-terminal --working-directory=/media/neo/Storage/mozilla-central
+bindsym $mod+i exec "sh -c 'cd /media/neo/Storage/mozilla-central; st'"
 
 for_window [class="^.*"] border pixel 0
