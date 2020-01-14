@@ -19,6 +19,18 @@ gaps outer 2
 
 set $mod Mod4
 
+# #---Dropdown Windows---# #
+# General dropdown window traits. The order can matter.
+for_window [instance="dropdown_*"] floating enable
+for_window [instance="dropdown_*"] move scratchpad
+for_window [instance="dropdown_*"] sticky enable
+for_window [instance="dropdown_*"] scratchpad show
+for_window [instance="dropdown_tmuxdd"] resize set 625 450
+for_window [instance="dropdown_dropdowncalc"] resize set 800 300
+for_window [instance="dropdown_tmuxdd"] border pixel 3
+for_window [instance="dropdown_dropdowncalc"] border pixel 2
+for_window [instance="dropdown_*"] move position center
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:OpenSans 9
@@ -216,7 +228,6 @@ exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
 # exec_always --no-startup-id killall xbindkeys && xbindkeys
 
 #bind lock screen
-#bindsym $mod+shift+x exec i3lock --color "$bg-color"
 bindsym $mod+shift+x exec --no-startup-id bash ~/.config/i3/scripts/lock_rick.sh
 
 # Sreen brightness controls
@@ -240,21 +251,17 @@ bindsym XF86AudioLowerVolume exec --no-startup-id amixer -D pulse sset Master 5%
 # Toggle muting
 bindsym XF86AudioMute exec --no-startup-id amixer -D pulse sset Master toggle-mute
 
+bindsym $mod+y exec --no-startup-id ddspawn tmuxdd
+
 # Background
 exec _always wal -i /usr/share/backgrounds/white_ring.jpg 
 exec_always --no-startup-id nm-applet
+exec_always --no-startup-id ddspawn tmuxdd
 
 # start at boot
 exec compton
 exec feh --bg-scale /usr/share/backgrounds/white_ring.jpg
-#exec wal -i /usr/share/backgrounds/ubuntustudio_disco_dingo_1080.jpg 
 exec st -c Neomutt -e neomutt
-exec setxkbmap -option ctrl:ralt_rctrl
-
-# Open new terminal at current directory
-# Doesn't work when pressing keybind, works when called from terminal. Need to test
-bindsym $mod+BackSpace exec $HOME/.config/i3/i3_shell.sh
-
-bindsym $mod+i exec "sh -c 'cd /media/neo/Storage/mozilla-central; st'"
+exec_always setxkbmap -option ctrl:ralt_rctrl
 
 for_window [class="^.*"] border pixel 0
