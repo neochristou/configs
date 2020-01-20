@@ -1,9 +1,9 @@
 # Basic binds
 
 super + o
-	gedit ~/.config/i3/config
+	st -e vim ~/.config/i3/config
 super + u
-	terminator -e gotop-cjbassi
+	st -e gotop-cjbassi
 super + g
 	firefox
 super + m
@@ -12,19 +12,23 @@ super + n
 	/usr/bin/turtl
 super + b
 	nautilus
-super + period 
-	exec sp next
-super + comma 
-	exec sp prev
-super + slash 
-	exec sp play 
+super + {period, comma, slash}
+	exec sp {next, prev, play}
+# Run terminal
 super + Return
-	$TERMINAL
+	st
+# Window manager - kill window
 super + shift + q
-	kill
+	i3 kill
+# Start dmenu 
+super + d 
+	exec dmenu_run
 
-# Restart network manager DOESNT WORK
-super + shift + o
+super + grave
+	dmenuunicode
+
+# Restart network manager 
+super + Shift + o
 	sudo systemctl restart network-manager.service
 
 # Change keyboard language
@@ -34,6 +38,9 @@ super + space
 # Open new terminal at current directory
 super + BackSpace
 	$HOME/.config/i3/i3_shell.sh
+
+super + i
+	sh -c 'cd /media/neo/Storage/mozilla-central; st'
 
 #interactive screenshot by pressing printscreen
 Print
