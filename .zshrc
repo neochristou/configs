@@ -77,7 +77,9 @@ export NVM_DIR="/home/neo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Precmd : to emulate bash's PROMPT_COMMAND variable
-precmd() {pwd > /tmp/whereami}
+precmd(){ 
+	pwd > /tmp/whereami
+	}
 
 xset +fp /home/neo/.local/share/fonts
 xset fp rehash
@@ -85,5 +87,12 @@ xset fp rehash
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
-
+# FZF settings
+export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Hadoop settings
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
+setxkbmap -option caps:swapescape
+setxkbmap -option ctrl:ralt_rctrl

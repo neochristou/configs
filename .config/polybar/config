@@ -57,9 +57,9 @@ font-0 = FontAwesome:style=Regular
 font-1 = unifont:fontformat=truetype:size=10:antialias=true;0
 font-2 = siji:pixelsize=10;1
 
-modules-left = i3
-modules-center = xwindow spotify 
-modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu battery temperature network date 
+modules-left = i3 xwindow 
+modules-center = spotify 
+modules-right = filesystem xbacklight pulseaudio xkeyboard memory cpu battery network date 
 
 tray-position = right
 tray-padding = 1
@@ -409,7 +409,7 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = python ~/.config/polybar/scripts/spotify_status.py -t 15 -f '{song}: {artist}'
+exec = python ~/.config/polybar/scripts/spotify_status.py -t 20 -f '{song}: {artist}'
 format-underline = #1db954
 
 [module/powermenu]
