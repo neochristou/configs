@@ -5,7 +5,7 @@ super + o
 super + u
 	st -e gotop-cjbassi
 super + g
-	firefox
+	brave-browser
 super + m
 	spotify 
 super + n
