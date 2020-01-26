@@ -3,7 +3,7 @@
 super + o
 	st -e vim ~/.config/i3/config
 super + u
-	st -e gotop-cjbassi
+	st -e gotop
 super + g
 	brave-browser
 super + m
@@ -28,7 +28,7 @@ super + grave
 	dmenuunicode
 
 # Restart network manager 
-super + Shift + o
+super + shift + o
 	sudo systemctl restart network-manager.service
 
 # Change keyboard language
