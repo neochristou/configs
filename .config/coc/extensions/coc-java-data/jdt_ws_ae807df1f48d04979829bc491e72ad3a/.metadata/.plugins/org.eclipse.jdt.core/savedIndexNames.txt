@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/neo/.config/coc/extensions/coc-java-data/jdt_ws_ae807df1f48d04979829bc491e72ad3a/.metadata/.plugins/org.eclipse.jdt.core
+3842426239.index
+4289641274.index
+646308851.index

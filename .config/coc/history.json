@@ -1,0 +1,33 @@
+{
+  "extensions": {
+    "%2Fhome%2Fneo": [
+      "exit",
+      "ccls"
+    ],
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
+      " e",
+      "coc"
+    ],
+    "%2Fmedia%2Fneo%2FStorage%2Fmozilla-central%2Fsecurity%2Fnss%2Flib%2Ffreebl": [
+      "high"
+    ]
+  },
+  "outline": {
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
+      "privatekey",
+      " o",
+      "hashsha"
+    ]
+  },
+  "grep": {
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
+      "async",
+      "hashArrayScrypt"
+    ]
+  },
+  "snippets": {
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
+      ":q"
+    ]
+  }
+}

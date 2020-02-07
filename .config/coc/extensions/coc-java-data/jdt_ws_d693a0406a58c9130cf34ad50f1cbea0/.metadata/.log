@@ -1,0 +1,180 @@
+!SESSION 2020-01-29 17:11:03.506 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/neo/.config/coc/extensions/coc-java-data/jdt_ws_d693a0406a58c9130cf34ad50f1cbea0
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:05.859
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.034
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.058
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.058
+!MESSAGE Initializing Java Language Server 0.50.0.202001271434
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.074
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.075
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.084
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.131
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.230
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:11:06.747
+!MESSAGE Importing Gradle project(s)
+!SESSION 2020-01-29 17:27:36.942 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/neo/.config/coc/extensions/coc-java-data/jdt_ws_d693a0406a58c9130cf34ad50f1cbea0
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.616
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.750
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.773
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.774
+!MESSAGE Initializing Java Language Server 0.50.0.202001271434
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.798
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.798
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.825
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.855
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:38.927
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:39.376
+!MESSAGE Importing Gradle project(s)
+!SESSION 2020-01-29 17:27:43.385 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/neo/.config/coc/extensions/coc-java-data/jdt_ws_d693a0406a58c9130cf34ad50f1cbea0
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.031
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.171
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.194
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.195
+!MESSAGE Initializing Java Language Server 0.50.0.202001271434
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.210
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.210
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.226
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.265
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.341
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:27:45.774
+!MESSAGE Importing Gradle project(s)
+!SESSION 2020-01-29 17:29:14.198 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/neo/.config/coc/extensions/coc-java-data/jdt_ws_d693a0406a58c9130cf34ad50f1cbea0
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:15.903
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.044
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.068
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.069
+!MESSAGE Initializing Java Language Server 0.50.0.202001271434
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.087
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.088
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.116
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.141
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.224
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:29:16.761
+!MESSAGE Importing Gradle project(s)
+!SESSION 2020-01-29 17:46:18.278 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.5
+java.vendor=Private Build
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/neo/.config/coc/extensions/coc-java-data/jdt_ws_d693a0406a58c9130cf34ad50f1cbea0
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:19.998
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.120
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.142
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.142
+!MESSAGE Initializing Java Language Server 0.50.0.202001271434
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.156
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.156
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.updateSourceAttachment, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.178
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.208
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.285
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2020-01-29 17:46:20.739
+!MESSAGE Importing Gradle project(s)

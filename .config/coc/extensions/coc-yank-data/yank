@@ -1,0 +1,1551 @@
+413611751552445e0bddb989e7dc7dbc|file:///home/neo/Documents/diplomatiki/create-keypair.js|4|5|V|javascript
+	    encoder.encode
+aa26670dc9a992177dca0678dcf7d253|list:/extensions|2|1|V|list
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+9dbcaf87f55cbf0901026e8badd25301|list:/extensions|9|1|V|list
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+d0fe61375a73366dcab38c35751eab47|list:/extensions|9|1|V|list
+	Press ? on normal mode to get help.
+12c779ee74f9464302f506d67d6dd73c|list:/extensions|11|1|V|list
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+00478008a1902fd208f0c51bc72a1c09|list:/extensions|4|1|V|list
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+70647d99e5aa76fc48b2f1df4d0330ea|list:/outline|2|1|V|list
+	createKeyPairFromPassword	[Function]	2
+	  encoder	[Variable]	3
+	  passEnc	[Variable]	6
+	  hashScrypt	[Variable]	7
+	  hashArrayScrypt	[Variable]	8
+	  privateKeyArray	[Variable]	11
+	  privateKey	[Variable]	12
+	    privateKeyArray.map() callback	[Function]	12
+	  privateKeyEnc	[Variable]	14
+	  hashSha512	[Variable]	16
+	  hashArraySha512	[Variable]	17
+	  hash512sliced	[Variable]	20
+	  slicedText	[Variable]	21
+	    hash512sliced.map() callback	[Function]	21
+	  slicedEnc	[Variable]	23
+	  publicKeyPromise	[Variable]	26
+	  publicKeyByteArray	[Variable]	27
+	  publicKey	[Variable]	29
+	    publicKeyByteArray.map() callback	[Function]	29
+	password	[Variable]	37
+	keypair	[Variable]	39
+	keypair.then() callback	[Function]	40
+5ff72e3b6505f122d923e0ff24acb4ca|list:/outline|12|1|V|list
+	password	[Variable]	37
+	  passEnc	[Variable]	6
+	  publicKey	[Variable]	29
+	  privateKey	[Variable]	12
+	  privateKeyEnc	[Variable]	14
+	  privateKeyArray	[Variable]	11
+	  publicKeyPromise	[Variable]	26
+	  publicKeyByteArray	[Variable]	27
+	    privateKeyArray.map() callback	[Function]	12
+	    publicKeyByteArray.map() callback	[Function]	29
+	createKeyPairFromPassword	[Function]	2
+	keypair	[Variable]	39
+	  hashScrypt	[Variable]	7
+	  hashArrayScrypt	[Variable]	8
+	keypair.then() callback	[Function]	40
+	    hash512sliced.map() callback	[Function]	21
+351244bee1eb51dbabedb62c4f899d9c|list:/outline|5|1|V|list
+	  privateKey	[Variable]	12
+	  privateKeyEnc	[Variable]	14
+	  privateKeyArray	[Variable]	11
+	    privateKeyArray.map() callback	[Function]	12
+	  publicKeyPromise	[Variable]	26
+	password	[Variable]	37
+	  publicKeyByteArray	[Variable]	27
+	createKeyPairFromPassword	[Function]	2
+	    publicKeyByteArray.map() callback	[Function]	29
+	keypair	[Variable]	39
+	keypair.then() callback	[Function]	40
+2962514964558e502be35ca0d0a8e1f0|list:/outline|5|1|V|list
+	  privateKey	[Variable]	12
+	  privateKeyEnc	[Variable]	14
+	  privateKeyArray	[Variable]	11
+	    privateKeyArray.map() callback	[Function]	12
+80b7f0b63d53891cab20702d43a27b4b|file:///home/neo/.vimrc|55|1|V|vim
+	" Syntastic settings
+	set statusline+=%#warningmsg#
+	set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%*
+	" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ["sh"],'passive_filetypes': ["c"] }
+	nnoremap <C-w>e :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+	let g:syntastic_always_populate_loc_list = 1
+	let g:syntastic_auto_loc_list = 1
+	let g:syntastic_check_on_open = 0
+	let g:syntastic_check_on_wq = 0
+	let g:syntastic_enable_highlighting = 1
+	
+12cba3ee81cf4a793796a51b6327c678|file:///media/neo/Storage/mozilla-central/security/nss/lib/freebl/sha512.c|977|5|v|c
+	copy
+e51018f4387a40ec2c17ca8fafd8ebe7|file:///media/neo/Storage/mozilla-central/security/nss/lib/freebl/sha512.c|977|5|v|c
+	copi
+14ddcc38a51b053d77aaa1ef34d7b791|file:///home/neo/.config/coc/ultisnips/java.snippets|27|9|v|snippets
+	Tab_trigger
+ac60ed9ea80ded63f23ac392816e5ea5|file:///media/neo/Storage/mozilla-central/security/nss/lib/freebl/sha512.c|976|4|V|c
+	    cry
+2c25eaf20d09317d22d28c71b6a8512c|list:/extensions|2|1|V|list
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+b71a2ba25c1e71ad7af30393ac99a260|file:///home/neo/.vimrc|4|1|V|vim
+	let g:oceanic_next_terminal_italic = 1
+5a4370a60d649bc8ed18641ca76d9f54|file:///media/neo/Storage/mozilla-central/security/nss/lib/freebl/sha512.c|977|5|V|c
+	    memcmp
+7cc4db6681f4710e553f8c0b436f48b5|file:///media/neo/Storage/mozilla-central/security/nss/lib/freebl/sha512.c|977|10|V|c
+	    memcma jp
+	        hh
+3e12173fc44b367911e29b56675db3a2|file:///home/neo/test.c|5|4|V|c
+	   int a = a;
+ecdbffbb3e3c6f3a314c108265cb8b5a|file:///home/neo/test.c|5|5|V|c
+	    memcp  
+d292f5308a51ab98ba4db90ca18c792a|file:///home/neo/test.c|6|4|V|c
+	   m
+6926f1f393126c4e59d2e25fe2d0ffc5|file:///home/neo/test.c|5|4|V|c
+	    printf("Hello world!");
+	    
+6a320f91b9fbde4c9f6a2e5629618b66|file:///home/neo/test.c|6|5|V|c
+	    mem
+e64e6e24c2aba5e3258cb201ded118b7|file:///home/neo/test.c|3|1|V|c
+	#include <ma
+bd84460c3e0452ec1114497577d840ef|file:///home/neo/.vimrc|57|1|V|vim
+	let g:ycm_key_list_select_completion = ['<Down>'] " Remove <Tab> from the list of keys mapped by YCM.
+493341f6514708b7f7df39a87a3f443e|file:///home/neo/.vimrc|57|1|V|vim
+	inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "ᐅ"
+a6a7fed0d3fe5aa3223f565525169230|file:///home/neo/.vim/bundle/coc.nvim/.vim/coc-settings.json|7|1|V|jsonc
+	
+	"languageserver": {
+	    "ccls": {
+	      "command": "ccls",
+	      "filetypes": ["c", "cpp", "objc", "objcpp"],
+	      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+	      "initializationOptions": {
+	         "cache": {
+	           "directory": "/tmp/ccls"
+	         }
+	       }
+	    }
+	  }
+10260491d517a7a02102edb4d4aebc01|file:///home/neo/.vim/bundle/coc.nvim/.vim/coc-settings.json|6|1|V|jsonc
+	    "languageserver": { "ccls": {
+	          "command": "ccls",
+	          "filetypes": ["c", "cpp", "objc", "objcpp"],
+	          "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+	          "initializationOptions": {
+	             "cache": {
+	               "directory": "/tmp/ccls"
+	             }
+	           }
+	        }
+	      }
+bf5b42205d9383159bb2ea1cf02f2b15|file:///home/neo/.zshrc|98|8|v|zsh
+	HADOOP_PREFIX
+089ddbff2bd86941bb8941a23bd54cd8|file:///usr/local/hadoop/etc/hadoop/yarn-env.sh|171|49|v|sh
+	-SYSTEM"
+017c8808ea21675ae9d14fd9ff7f8b3b|file:///usr/local/hadoop/etc/hadoop/yarn-site.xml|17|1|V|xml
+	    <description>
+	      Enable services rest api on ResourceManager.
+	    </description>
+573863aa4f923a8e1c5aeb2a44572dbe|file:///usr/local/hadoop/etc/hadoop/mapred-site.xml|23|1|V|xml
+	p    <property>
+	        <name>mapreduce.framework.name</name>
+	        <value>yarn</value>
+	    </property>
+8297ececbed96228ce9365c638b76500|file:///usr/local/hadoop/etc/hadoop/yarn-site.xml|25|1|V|xml
+	  </property>
+	<!-- <property> -->
+e9329f43d494fe03efe6ea95eda2df48|file:///usr/local/hadoop/etc/hadoop/yarn-site.xml|34|1|V|xml
+	<!-- <property> -->
+	<!-- <name>yarn.nodemanager.aux-services</name> -->
+	<!-- <value>mapreduce_shuffle</value> -->
+	<!-- </property> -->
+c00968ed04a3918d81140e81283b37f2|file:///home/neo/.zshrc|112|1|V|zsh
+	setxkbmap -option caps:swapescape
+8dd6bef1d938ee3d28a0b489ef5d1c65|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|22|5|V|php
+	    echo $array;
+68ec97f1c5e8f031e54c3cea2b0ca135|file:///home/neo/test.c|11|1|V|c
+	    printf
+fca76911b49a066097a3c606eaf8a79c|list:/extensions|2|1|V|list
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+ec1a9fdbaf2d1d9afc5fa061ef1e8f38|list:/extensions|14|1|V|list
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+f546903fa11d629070b9b625090aec89|list:/extensions|4|1|V|list
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+5ccde94d94dea06a0ee34001df1fc6b0|list:/extensions|4|1|V|list
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+c59fd79ecbe2ebaf16bb0c4fe1c6e9cc|list:/extensions|4|1|V|list
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+11855bcefb0979272a0c23505b2fb9b8|file:///home/neo/.vim/bundle/coc.nvim/.vim/coc-settings.json|18|1|V|jsonc
+	  "languageserver": {
+	    "clangd": {
+	      "command": "clangd",
+	      "args": ["--background-index"],
+	      "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+	      "filetypes": ["c", "cpp", "objc", "objcpp"]
+	    }
+	  }
+343cfcebb1d02a1f5668620231197333|file:///home/neo/.vim/bundle/coc.nvim/.vim/coc-settings.json|6|1|V|jsonc
+	 "languageserver": {
+	    "ccls": {
+	      "command": "ccls",
+	      "filetypes": ["c", "cpp", "objc", "objcpp"],
+	      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+	      "initializationOptions": {
+	         "cache": {
+	           "directory": "/tmp/ccls"
+	         }
+	       }
+	    }
+	  }
+9c2ef81a746c03e514b3376001d1e5d7|file:///home/neo/Documents/testdir/test.c|9|5|V|c
+	    pu
+00e34f12c6552c0a70899bf9044a960a|file:///home/neo/Documents/testdir/test.c|9|5|V|c
+	    scanf
+e6badff6b7f33ff88676c880fc4f82a4|file:///home/neo/Documents/testdir/test.c|8|5|V|c
+	    abs
+06634a6ea2d25e1239a95d19060a9e91|list:/extensions|4|1|V|list
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+aec3cfb9cecffe945b2a1ab591e1d2ff|list:/extensions|2|1|V|list
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+c2b462050fabee9aeed0e5442db4fdcb|list:/extensions|2|1|V|list
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+98ebc757a0a0b477d451ef9166d14957|list:/extensions|15|1|V|list
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+aa5f90d5adf6000bd8e47608f50985f3|list:/extensions|6|1|V|list
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+0cf31b2c283ce3431794586df7b0996d|file:///home/neo/Documents/diplomatiki/create-keypair.js|6|4|V|javascript
+	    
+2afd799eb653a1256eec54cb8a255508|file:///home/neo/Documents/diplomatiki/create-keypair.js|5|5|V|javascript
+	    a
+2717b86ca31369ec2a38deefcfc8c795|file:///home/neo/Documents/diplomatiki/create-keypair.js|5|5|V|javascript
+	    texte
+e186abf2995393c1e72c9e2cbf278344|file:///home/neo/Documents/diplomatiki/create-keypair.js|4|5|V|javascript
+	    let a
+9940ec9d6462a96f51f674c82c628866|file:///home/neo/Documents/diplomatiki/javascript-files/verify_sig/verify.py|5|1|V|python
+	import sys
+dad35e2bbd423a9c4e6304ec29238791|file:///home/neo/Documents/diplomatiki/javascript-files/verify_sig/verify.py|23|37|v|python
+	publnc_key_str
+172fa1b31a062a03d73d1ff1075e899c|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|35|5|V|javascript
+	    let signature_ret;
+5da3c67a8db40e4dcfa9c9b8d01fda15|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|43|1|V|javascript
+	// let password = prompt("Type your password:");
+	
+	// let keypair = createKeyPairFromPassword(password);
+	// keypair.then( () => {
+	//     console.log("Keypair: ", keypair);
+	// });
+e23e58d45ffcf84d7ac5ac7cc04f128a|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|48|1|V|javascript
+	
+	function hexToBytes(hex) {
+	    for (var bytes = [], c = 0; c < hex.length; c += 2)
+		    bytes.push(parseInt(hex.substr(c, 2), 16));
+	    return bytes;
+	}
+	
+	async function createKeyPairFromPassword(password) {
+	    const encoder = new TextEncoder();
+	
+	    //Get scrypt hash of password
+	    const passEnc = encoder.encode(password);
+	    const hashScrypt = await crypto.subtle.digest('SCRYPT', passEnc);
+	    const hashArrayScrypt = Array.from(new Uint8Array(hashScrypt));                     // convert buffer to byte array
+	
+	    //Slice scrypt hash to 32 bytes to get the privateKey
+	    const privateKeyArray = hashArrayScrypt.slice(0, 32);
+	    const privateKey = privateKeyArray.map(b => b.toString(16).padStart(2, '0')).join('');
+	
+	    const privateKeyEnc = hexToBytes(privateKey);
+	    const privateKeyBytes = new Uint8Array(privateKeyEnc);
+	    //Curve25519 scalar mult lower 32 bytes of sha512 hash to get public key
+	    const publicKeyPromise = await crypto.subtle.digest('CURVE25519', privateKeyBytes);
+	    const publicKeyByteArray = Array.from(new Uint8Array(publicKeyPromise));                     // convert buffer to byte array
+	
+	    const publicKey = publicKeyByteArray.map(b => b.toString(16).padStart(2, '0')).join('');
+	
+	    console.log("Private key: ", privateKey);
+	    console.log("Public key: ", publicKey);
+	
+	    return privateKey.concat(publicKey);
+	}
+	
+	async function signMessage(keypair, message){
+	    const input = keypair.concat(message);
+	    console.log("Signature input: ",input);
+	    const inputBuf = hexToBytes(input);
+	    const inputArray = new Uint8Array(inputBuf);
+	    
+	    return crypto.subtle.digest('ED25519SIGN', inputArray);
+	}
+	
+bdaedfd1b626931183ddb0334e44f996|file:///home/neo/.vimrc|146|1|V|vim
+	nmap <leader>ac  <Plug>(coc-codeaction)
+4e37c8f56f6907ee9b977213077c1927|file:///home/neo/.vimrc|165|1|v|vim
+	nmap <leader>a
+13a5442a73cc9ec9cb18a2e41ed90128|file:///home/neo/.vimrc|165|1|V|vim
+	c  <Plug>(coc-codeaction)
+16c1235d4792649ef95111a817a93183|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|7|1|V|javascript
+	async function createKeyPairFromPassword(password) {
+7ab1dfd3cb7c3b20f5f418729c992207|file:///home/neo/.vimrc|157|1|V|vim
+	nmap <silent> <TAB> <Plug>(coc-range-select)
+f802669d45d65aa1e041e8d0716ce4dd|file:///home/neo/.vimrc|113|1|V|vim
+	nnoremap <silent> K :call <SID>show_documentation()<CR>
+11929f3682ae46922919fdc9721249e2|file:///home/neo/.vimrc|165|31|v|vim
+	:call 
+bfe0dc75ad7dfb799becd0304d278567|file:///home/neo/.vimrc|165|31|v|vim
+	<SID>show_documentation(
+af1a033868620666960bf917dbfc02d0|file:///home/neo/.vimrc|165|1|V|vim
+	nnoremap <silent> <leader> fo :Fold<CR>
+a8be6f5c87a8aa510a017a1dc22c8441|file:///home/neo/.vimrc|170|1|V|vim
+	set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+d82bb854d6399615b131d90ac577e824|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|19|1|V|javascript
+	  const privateKey = privateKeyArray.map(b => b.toString(16).padStart(2, "0"))
+bc17042e37fe8af7e27fd4b24623180d|file:///home/neo/.vimrc|192|1|V|vim
+	nnoremap <silent> <space>y  :<C-u>CocList -A --normal yank<cr>
+0c6dc058bbb64c9d98d53704736251fe|file:///home/neo/.vimrc|190|1|V|vim
+	" COC key mappings
+b5478eeee2e58b3573320f6ee877b1ed|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|7|1|V|javascript
+	async function createKeyPairFromPassword(password) {
+	  const encoder = new TextEncoder();
+	
+	  //Get scrypt hash of password
+	  const passEnc = encoder.encode(password);
+c27fa932cdf7dfc3807420bd18feccaf|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|7|1|V|javascript
+	async function createKeyPairFromPassword(password) {
+	  const encoder = new TextEncoder();
+bbf00cb881e298782c18f61891a0f575|list:/extensions|2|1|V|list
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+087424e177d370a435d6e060f0322c60|file:///home/neo/.vimrc|193|1|V|vim
+	
+	 " trigger snippet expand.
+8b9ede4da5680510d40bb46b655df490|file:///home/neo/Documents/diplomatiki/create-keypair.js|5|5|V|javascript
+	    PerformanceObserver
+16ecaec504d7244ca6c4db21704df9b8|list:/extensions|2|1|V|list
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	+ coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+849c1d081f40d646df7a62521f71ce34|file:///home/neo/.vimrc|194|1|V|vim
+	 " trigger snippet expand.
+	 imap <leader>r <Plug>(coc-snippets-expand)
+	
+	 " Use <C-j> for select text for visual placeholder of snippet.
+	 vmap <C-j> <Plug>(coc-snippets-select)
+	
+	 " Use <C-j> for jump to next placeholder, it's default of coc.nvim
+	 let g:coc_snippet_next = '<c-n>'
+	
+	 " Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+	 let g:coc_snippet_prev = '<c-p>'
+	
+	 " Use <C-j> for both expand and jump (make expand higher priority.)
+	 imap <C-p> <Plug>(coc-snippets-expand-jump)
+	
+f55eea93a1ee2b75c335d231c05340ad|list:/grep|2|1|V|list
+	create-keypair.js:2:1:async function createKeyPairFromPassword(password) {
+	cryptotest.js:3:3:  async function digestMessageSha256(text) {
+	cryptotest.js:12:3:  async function createKeysCurve25519(text) {
+	cryptotest.js:21:3:  async function digestMessageScrypt(text) {
+	curve25519-digest.js:3:3:  async function createKeysCurve25519(text) {
+	javascript-files/create-keypair.js:7:1:async function createKeyPairFromPassword(password) {
+	javascript-files/create-keypair.js:40:1:async function signMessage(keypair, message) {
+	javascript-files/time-password.js:1:1:async function submitPassword(username, password){
+	javascript-files/time-signature.js:1:1:async function createAndSign(username, password){
+	keybase/sitewide-keybase.js:14:11637:[Omitted long line with 1 matches]
+	keybase/sitewide-keybase.js:17:31897:[Omitted long line with 1 matches]
+	keybase/sitewide-keybase.js:18:4052:[Omitted long line with 6 matches]
+	keybase/sitewide-keybase.js:18:8362:[Omitted long line with 6 matches]
+	keybase/sitewide-keybase.js:18:10592:[Omitted long line with 6 matches]
+	keybase/sitewide-keybase.js:18:14335:[Omitted long line with 6 matches]
+	keybase/sitewide-keybase.js:18:15372:[Omitted long line with 6 matches]
+	keybase/sitewide-keybase.js:18:16320:[Omitted long line with 6 matches]
+	javascript-files/testing/testsig.js:7:1:async function createKeyPairFromPassword() {
+	javascript-files/testing/testsig.js:26:1:async function signMessage(keypair, message){
+	javascript-files/testing/testkey.js:7:1:async function createKeyPairFromPassword() {
+	keybase/triplesec.js:328:11:      var async_args, input, progress_hook, slice_args, what;
+	keybase/triplesec.js:346:7:      async_args = {
+	keybase/triplesec.js:351:52:      return util.bulk(input.sigBytes, slice_args, async_args);
+304ddeec46aee82d1f15b14e0eb7458c|list:/extensions|15|1|V|list
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+f438ede21a0323268ac3f7af786177bc|list:/outline|5|1|V|list
+	keypair.then() callback	[Function]	40
+	keypair	[Variable]	39
+	password	[Variable]	37
+	    publicKeyByteArray.map() callback	[Function]	29
+	  publicKey	[Variable]	29
+	  publicKeyByteArray	[Variable]	27
+	  publicKeyPromise	[Variable]	26
+	  slicedEnc	[Variable]	23
+	    hash512sliced.map() callback	[Function]	21
+	  slicedText	[Variable]	21
+	  hash512sliced	[Variable]	20
+	  hashArraySha512	[Variable]	17
+	  hashSha512	[Variable]	16
+	  privateKeyEnc	[Variable]	14
+	    privateKeyArray.map() callback	[Function]	12
+	  privateKey	[Variable]	12
+	  privateKeyArray	[Variable]	11
+	  hashArrayScrypt	[Variable]	8
+	  hashScrypt	[Variable]	7
+	  passEnc	[Variable]	6
+	  encoder	[Variable]	3
+	createKeyPairFromPassword	[Function]	2
+ccc430fab42c0956feab12d83eed2331|list:/outline|5|1|V|list
+	    hash512sliced.map() callback	[Function]	21
+	    privateKeyArray.map() callback	[Function]	12
+	    publicKeyByteArray.map() callback	[Function]	29
+	  publicKeyPromise	[Variable]	26
+	createKeyPairFromPassword	[Function]	2
+3225b3f31e9d1442c7a12f46a8b3e0d0|list:/outline|5|1|V|list
+	createKeyPairFromPassword	[Function]	2
+	    hash512sliced.map() callback	[Function]	21
+	    privateKeyArray.map() callback	[Function]	12
+	    publicKeyByteArray.map() callback	[Function]	29
+3ddbf53679fb61c09a2a484cd811c0ca|list:/outline|7|1|V|list
+	  hashSha512	[Variable]	16
+	  hashScrypt	[Variable]	7
+	  hash512sliced	[Variable]	20
+	  hashArraySha512	[Variable]	17
+	  hashArrayScrypt	[Variable]	8
+	    hash512sliced.map() callback	[Function]	21
+	keypair.then() callback	[Function]	40
+58f7417303a9e9190611bf3efc55f4bb|list:/outline|7|1|V|list
+	  hashSha512	[Variable]	16
+	  hashScrypt	[Variable]	7
+	  hash512sliced	[Variable]	20
+	  hashArraySha512	[Variable]	17
+	  hashArrayScrypt	[Variable]	8
+	    hash512sliced.map() callback	[Function]	21
+59e51f351daf70fe6d30bf5ee1f9a43f|list:/outline|3|1|V|list
+	  hashSha512	[Variable]	16
+	  hashScrypt	[Variable]	7
+	  hashArraySha512	[Variable]	17
+	  hashArrayScrypt	[Variable]	8
+	  hash512sliced	[Variable]	20
+	    hash512sliced.map() callback	[Function]	21
+dea66eaa4f8c974ecae4fe34cacabb75|list:/extensions|15|1|V|list
+	* coc-yank	1.1.3	~/.config/coc/extensions/node_modules/coc-yank
+	+ coc-ccls	0.0.5	~/.config/coc/extensions/node_modules/coc-ccls
+	+ coc-java	1.4.6	~/.config/coc/extensions/node_modules/coc-java
+	+ coc-json	1.2.4	~/.config/coc/extensions/node_modules/coc-json
+	* coc-lists	1.3.6	~/.config/coc/extensions/node_modules/coc-lists
+	* coc-pairs	1.2.20	~/.config/coc/extensions/node_modules/coc-pairs
+	+ coc-phpls	2.1.7	~/.config/coc/extensions/node_modules/coc-phpls
+	+ coc-python	1.2.7	~/.config/coc/extensions/node_modules/coc-python
+	+ coc-texlab	1.9.9	~/.config/coc/extensions/node_modules/coc-texlab
+	+ coc-vimtex	1.0.2	~/.config/coc/extensions/node_modules/coc-vimtex
+	* coc-prettier	1.1.11	~/.config/coc/extensions/node_modules/coc-prettier
+	* coc-snippets	2.1.18	~/.config/coc/extensions/node_modules/coc-snippets
+	* coc-tsserver	1.4.9	~/.config/coc/extensions/node_modules/coc-tsserver
+	* coc-highlight	1.2.5	~/.config/coc/extensions/node_modules/coc-highlight
+c793fb08d36c8c628246f760e8340145|file:///home/neo/Documents/diplomatiki/create-keypair.js|5|1|V|javascript
+	    for
+805b2d42d9fe44340c8a4b933a36cce3|file:///home/neo/Documents/diplomatiki/create-keypair.js|5|1|V|javascript
+	    i//Get scrypt hash of password
+6ad4aa4d88ab7805b530dd988d4bdf19|file:///home/neo/Documents/diplomatiki/create-keypair.js|10|1|V|javascript
+	    if
+f309001ec6b07194eb26b5a32ad80c29|file:///home/neo/Documents/diplomatiki/create-keypair.js|16|1|V|javascript
+	    ife
+4e18a8335ca99ce9bd3f665250578113|file:///home/neo/.vimrc|226|1|V|vim
+	nnoremap <C-w>e :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+c4900c1342e0989d8ddeebc42b83be4d|file:///home/neo/.vimrc|227|18|v|vim
+	SyntasticCheck
+b8c0fbe5ed21894f3fce70cb4f083c6f|file:///home/neo/.vimrc|227|30|v|vim
+	SyntasticToggleMode
+fcfb92b7a5bb120ff314d99ce9b51edb|file:///home/neo/.vimrc|228|1|V|vim
+	nnoremap <C-w>l :lclose<CR> :lopen<CR>
+060bf2d587991d8f090a1309b285291c|file:///home/neo/.vimrc|227|27|v|vim
+	Check
+ae601faa916217926d60f45f6f082e13|file:///home/neo/.vimrc|226|36|v|vim
+	 :SyntasticToggleMode<CR>
+c90caf6993c279505b1607146817b811|file:///home/neo/.vimrc|42|27|v|vim
+	<CR>
+77251263743bf8589dd1d8be4200fffb|file:///home/neo/.local/bin/compiler|9|1|V|sh
+	if [ $# -gt 2 ]; then
+ca53f700a4636d0f5c98ef959af67ac3|file:///home/neo/.local/bin/compiler|10|3|v|sh
+	entlist
+c462067a6bc06af4962cb7070881631e|file:///home/neo/.vimrc|42|1|V|vim
+	map <leader>c :!compiler %<CR>
+8e17458b5b6cb85d1a4b0f7d516c0654|file:///home/neo/Documents/diplomatiki/javascript-files/scrypt.py|21|1|V|python
+	nacl.encoding.encode(encoder=nacl.encoding.HexEncoder)
+cdcebc7a5a0d465603b07da99db61247|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|21|22|v|php
+	 ["admin" => "test"], ];
+21232f297a57a5a743894a0e4a801fc3|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|22|21|v|php
+	admin
+df0a5f65c8a3519cfc74b3c61d3e673c|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|25|5|V|php
+	    echo $password_array["admin"];
+47a652a758c53488d5f7b9a1c39d8d1a|file:///home/neo/Documents/diplomatiki/javascript-files/scrypt.py|22|47|v|python
+	f for
+6d5bc17df1abcb49aa0fdf1664824c34|file:///home/neo/Documents/diplomatiki/javascript-files/scrypt.py|22|59|v|python
+	ch in line
+7b206ac3b72a5f20b4a997c2263f46f9|file:///home/neo/Documents/diplomatiki/javascript-files/scrypt.py|22|42|v|python
+	  for line in SCRYPT_HASH
+098f6bcd4621d373cade4e832627b4f6|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|22|21|v|php
+	test
+acd30ba34ddde909d8120855114cd618|file:///home/neo/.vimrc|43|28|v|vim
+	<space> 
+0e8052d5123cb63770f93bf135c0ea29|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|8|V|php
+	        echo "Logged in with password";
+7bb0edd98f22430a03b67f853e83c2ca|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|33|8|V|php
+	        
+df43f3230d65e09d26435fc250ba386f|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|37|1|V|php
+	        $command = escapeshellcmd("/usr/bin/python2.7 /opt/lampp/htdocs/verify.py $public_key $message $signature");
+	        $output = shell_exec($command);
+e8418d1d706cd73548f9f16f1d55ad6e|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|33|73|v|php
+	verify
+a218ae3ca48eb6f51ccdef0cb5d6c8cc|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|33|83|v|php
+	$public_key $message $signature
+55cd144ae92bef0e2eadea1d761876d8|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|25|5|V|php
+	    echo $password_arrayadmin;
+c57dfcb72bf3ce9e0235721362f77db1|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|37|12|V|php
+	           echo  
+bc95dfc14146aa23e43f2ea7af04d310|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|37|9|V|php
+	            
+71a75b229d91c4e83eed6ee58483b080|file:///home/neo/Documents/diplomatiki/javascript-files/scrypt.py|21|1|V|python
+	# print(SCRYPT_HASH)
+e7becc33b2fbe0254beb2dbf0ac7658a|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|1|V|php
+	        $output = shell_exec($command);
+	        $toCheck = $password_array("$username");
+1c6240db07ef727c6529b2a9af0016f0|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|32|1|V|php
+	    echo $username;
+62c3ca21dd5801264d516229a1f153ae|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|35|v|php
+	"$username"
+5f4dcc3b5aa765d61d8327deb882cf99|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|15|v|php
+	password
+9f3eb8b11a3f171bbc135312729d7cc5|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|36|9|V|php
+	        echo $output;
+f563bb33574db762a177480153080603|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|33|36|v|php
+	/usr/bin/python2.7 /opt/lampp/htdocs/scrypt.py $password
+1072475557282d7c178317b30a5744f0|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|22|21|v|php
+	fa4daebce76f9f5d5980d4219a039de33a151f19d197bb4d6c54846504b65d144e331feb8bd3234b38c52e152ab8fd03a7a50819c989de9c31d61eff1908bd9a
+78d5d5a285a3dda33b2a1a76447385c3|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|22|1|V|php
+	        'admin' => '',
+c427b6abf2484dff507b9a382313c893|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|9|V|php
+	        echo $command;
+a14841387fbfb45c820e524ef5f08d23|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|37|9|V|php
+	        echo $toCheck;
+38a054df0956f8e7c0980113831a78e6|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|36|14|v|php
+	$toCheck
+b45cffe084dd3d20d928bee85e7b0f21|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|10|v|php
+	string
+fbeec21c52b5bac8ced56dd2bf200e17|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|39|9|V|php
+	        echo strcmp($output, $toCheck);
+06b394fa9fd0395a83e36af01deec317|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|37|9|V|php
+	        echo $output;
+	        echo $toCheck;
+c89531a6a4324e65914298ea34d33143|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|19|1|V|javascript
+	    let t0 = performance.now();
+11c342b971d87804f22d7b6e33b79132|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|23|21|v|javascript
+	"Elaps
+964fc2ea002052a309b0b75a11ce9564|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|23|21|v|javascript
+	ed POST time:"
+1cfa9d80bec8e34ec3ed00e66296ccbe|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|20|1|V|javascript
+	    let t0 = performance.now();
+		let password = document.getElementById("passwd").value;
+	    let username = document.getElementById("username").value;
+	    submitPassword(username, password).then( () =>{
+	        let t1 = performance.now();
+	        let elapsed = t1-t0;
+	        console.log(elapsed);
+	    }
+	    );
+5eb3a6f4bc05bd5090cde671099a6b81|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|26|1|V|javascript
+	// }
+0437ca2d0435345756089f1824e794b1|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|17|1|V|javascript
+	// for (let i = 0; i < 1000; i++){
+64e2750c2ce8259e0094b571f2319b82|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|34|1|V|javascript
+	    // submitPassword(username, password).then( () =>{
+db9a0d2b2e46bebfe0b8cb3e7ba8148f|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|27|5|V|javascript
+	    console.log("Test");
+a3c149391ffc055dbab3d968689307d6|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|41|39|v|javascript
+	totalTime
+bf45cc191d9840cb8493576ce52dfbff|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|26|5|V|javascript
+	    console.log(elapsed);
+d81a255108511307a5ab34d9c41096ac|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|35|1|V|javascript
+	    // submitPassword(username, password).then( () =>{
+	    //     let t1 = performance.now();
+	    //     let elapsed = t1-t0;
+	    //     console.log(elapsed);
+	    // });
+434977ae8f77b5b5ba5dd99f1de72227|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|17|1|V|javascript
+	async function timePost(username, password) {
+	  let totalTime = 0;
+	  let t0, t1, elapsed;
+	  let repeats = 1000;
+	  for (let i = 0; i < repeats; i++) {
+	    t0 = performance.now();
+	    await submitPassword(username, password);
+	    t1 = performance.now();
+	    elapsed = t1 - t0;
+	    totalTime += elapsed;
+	  }
+	  return Promise.resolve(totalTime/repeats);
+	}
+7bdecee2cca528d5b72eccb727915919|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|33|11|v|javascript
+	submitPassword(username, password
+117995adf63e0283a85f28624881414e|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|33|11|v|javascript
+	submitPassword
+cc42f5057ff7c4192251517ae5d669aa|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|35|1|V|javascript
+	    timePost(username, password).then(avgTime => console.log(avgTime));
+691cf7fc1c18ce370ecae5cac58cf9d5|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|46|1|V|javascript
+	    let t0 = performance.now();
+	    createAndSign(username, password).then( () =>{
+	        let t1 = performance.now();
+	        let elapsed = t1-t0;
+	        console.log("Elapsed POST time:", elapsed);
+	    }
+b6ed383feb7e26e4451ea7fe084bc7e3|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|46|5|V|javascript
+	    );
+16508d13d70b1c99aa7a70d615a1cd8e|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|1|1|V|javascript
+	async function createAndSign(username, password){
+	    // let start = performance.now();
+		const message = "af82";
+		let keypair = await createKeyPairFromPassword(password);
+		let public_key = keypair.substr(64,128);
+	    let signedMessageBytes = await signMessage(keypair, message);
+	    let signedMessageArray = Array.from(new Uint8Array(signedMessageBytes));
+	    let signature = signedMessageArray.map(b => b.toString(16).padStart(2, '0')).join('');
+	    // let end = performance.now ();
+	    // let elapsedTime = end - start;
+	    // console.log("Elapsed create signature time: ", elapsedTime);
+	    let postResult = Promise.resolve(
+	        $.post("http://localhost:80/index.php",
+	            {
+	                'username': username, 
+	                'public_key': public_key,
+	                'message': message,
+	                'signature': signature,
+	            },
+	            function(data){
+	                // console.log(data);
+	            })
+	    );    
+	    return postResult;
+	}
+	
+	async function timePost(username, password) {
+	  let totalTime = 0;
+	  let t0, t1, elapsed;
+	  let repeats = 1000;
+	  for (let i = 0; i < repeats; i++) {
+	    t0 = performance.now();
+	    await createAndSign(username, password);
+	    t1 = performance.now();
+	    elapsed = t1 - t0;
+	    totalTime += elapsed;
+	  }
+	  return Promise.resolve(totalTime/repeats);
+	}
+	
+	$(document).ready(function(){
+	  $("button").click(function(){
+		let password = document.getElementById("passwd").value;
+	    let username = document.getElementById("username").value;
+	    timePost(username, password).then(avgTime => console.log(avgTime));
+	  });
+	});
+840f82180ddd072dc9efdf8ac9685e48|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|28|1|V|javascript
+	async function timePost(username, password) {
+	  let totalTime = 0;
+	  let t0, t1, elapsed;
+	  let repeats = 1000;
+	  for (let i = 0; i < repeats; i++) {
+	    t0 = performance.now();
+	    await createAndSign(username, password);
+	    t1 = performance.now();
+	    elapsed = t1 - t0;
+	    totalTime += elapsed;
+	  }
+	  return Promise.resolve(totalTime/repeats);
+	}
+654431ff24d7c135ff130a6fe1178806|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|32|5|v|javascript
+	timePost
+23b19d58396179b01f0214f8e3c95a89|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|32|5|v|javascript
+	createKeyPairFromPassword
+913229ddbef35c7c03cfe9e3535b68e6|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|13|1|V|javascript
+	    let postResult = Promise.resolve(
+	        $.post("http://localhost:80/index.php",
+	            {
+	                'username': username, 
+	                'public_key': public_key,
+	                'message': message,
+	                'signature': signature,
+	            },
+	            function(data){
+	                // console.log(data);
+	            })
+3310eb83f6baf9a01a3102429bf1efa2|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|13|5|V|javascript
+	    );    
+ce8eb1ea2de3e427c347601217a6a3f4|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|6|1|V|javascript
+	    let start = performance.now();
+		const message = "af82";
+		let keypair = await createKeyPairFromPassword(password);
+		let public_key = keypair.substr(64,128);
+	    let signedMessageBytes = await signMessage(keypair, message);
+	    let signedMessageArray = Array.from(new Uint8Array(signedMessageBytes));
+	    let signature = signedMessageArray.map(b => b.toString(16).padStart(2, '0')).join('');
+	    let end = performance.now ();
+	    let elapsedTime = end - start;
+	    console.log("Elapsed create signature time: ", elapsedTime);
+b7b530e169f45c731ed327198d8b690b|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|5|9|v|javascript
+	let 
+5e9511490a736b182981fea2933f5362|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|13|9|V|javascript
+	        elapsedTime = end - start;
+43663c1d6693aba6b5753d5fa455343b|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|14|9|V|javascript
+	        console.log("Elapsed create signature time: ", elapsedTime);
+a9b7ba70783b617e9998dc4dd82eb3c5|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|6|25|v|javascript
+	1000
+c6bce09246855c91c163008df01d3eb0|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|2|1|V|javascript
+	    // let start = performance.now();
+a1a19e720f08f0b0720a24512118274d|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|8|5|V|javascript
+	    // let end = performance.now ();
+	    // let elapsedTime = end - start;
+	    // console.log("Elapsed create signature time: ", elapsedTime);
+a8ee13d50f10d86488af643e3a8349fc|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|18|12|v|javascript
+	postResult
+6de9bfc0e01ccad53f76bc644cd657e8|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|18|12|v|javascript
+	postResulo
+30d90fc6fd2d6fe045680b994ccbe733|file:///home/neo/Documents/diplomatiki/javascript-files/keypair-only.html|8|41|v|html
+	time-signature.js
+aa8045630f7d1068c940a36da25188c2|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature-only.js|23|7|V|javascript
+	      console.log("Test");
+ba672fee5578963da7f043b37ec135be|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|33|5|V|javascript
+	    console.log("test")
+f78bcdda2119566b0e41513533f78e02|file:///home/neo/Documents/diplomatiki/javascript-files/timings.txt|1|1|v|text
+	Scrypt parameters (both on scrypt hash storage when using password only and when used as seed for keypair):
+b06c87468a77fa9730bd3a03e0f74fd4|file:///home/neo/Documents/diplomatiki/javascript-files/timings.txt|5|29|v|text
+	267 ms
+43ae79a653686992ae90e100340624dd|file:///home/neo/.config/polybar/config|62|28|v|
+	xbacklight 
+b326b5062b2f0e69046810717534cb09|file:///home/neo/Documents/diplomatiki/cryptotest.js|3|50|v|javascript
+	true
+3e1a083156aa112ee000f37d2008e9ff|file:///home/neo/.config/coc/ultisnips/javascript.snippets|12|1|V|snippets
+	# let g:ultisnips_javascript = {
+	#      \ 'keyword-spacing': 'always',
+	#      \ 'semi': 'never',
+	#      \ 'space-before-function-paren': 'always',
+	#      \ }
+4dd7c28f06e3bc9d7cc0bc17eb9f352c|file:///home/neo/Documents/diplomatiki/cryptotest.js|2|1|V|javascript
+	ifTraceback (most recent call last):
+	  File "<string>", line 3, in <module>
+	    A
+	NameError: name 'keyword_spacing' is not defined(true) {
+	    
+	}
+1e046e469997891cf633a738e6e1237e|untitled:1|1|1|V|
+	import java.io.IOException;
+	import java.util.*;
+	        
+	import org.apache.hadoop.fs.Path;
+	import org.apache.hadoop.conf.*;
+	import org.apache.hadoop.io.*;
+	import org.apache.hadoop.mapreduce.*;
+	import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+	import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+	        
+	public class WordCount {
+	
+	 public static class Map extends Mapper<LongWritable, Text, Text, Text> {
+	    private Text sortedWord = new Text();
+	    private Text wordText = new Text();
+	
+	
+	     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+	        String line = value.toString();
+	        StringTokenizer tokenizer = new StringTokenizer(line);
+	
+	        while (tokenizer.hasMoreTokens()) {
+	            String word = tokenizer.nextToken();
+	            char[] wordArray = word.toCharArray();
+	            Arrays.sort(wordArray);
+	            sortedWord.set(new String(wordArray));
+	            wordText.set(word);
+	            context.write(sortedWord, wordText);
+	        }
+	    }
+	 }
+	        
+	 public static class Reduce extends Reducer<Text, Text, Text, Text> {
+	
+	     private Text words = new Text();
+	     private StringBuilder wordsBuilder = new StringBuilder();
+	    public void reduce(Text key, Iterable<Text> values, Context context)
+	      throws IOException, InterruptedException {
+	        for (Text val : values) {
+	            wordsBuilder.append(val.toString());
+	            wordsBuilder.append(",");
+	        }
+	        String wordsStr = wordsBuilder.toString();
+	        words.set(wordsStr);
+	        context.write(key, words);
+	    }
+	 }
+	
+	
+	
+	    public static void main(String[] args) throws Exception {
+	    Configuration conf = new Configuration();
+	        
+	    Job job = Job.getInstance(conf, "wordcount");
+	    job.setJarByClass(WordCount.class);
+	    
+	    job.setOutputKeyClass(Text.class);
+	    job.setOutputValueClass(HashSet.class);
+	        
+	    job.setMapperClass(Map.class);
+	    job.setCombinerClass(Reduce.class);
+	    job.setReducerClass(Reduce.class);
+	        
+	    job.setInputFormatClass(TextInputFormat.class);
+	    job.setOutputFormatClass(TextOutputFormat.class);
+	
+	    FileInputFormat.addInputPath(job, new Path("input"));
+	    FileOutputFormat.setOutputPath(job, new Path("output"));
+	    
+	    System.exit(job.waitForCompletion(true) ? 0 : 1);
+	 }
+	        
+	}
+f5623a32c4c5bbe7d2f06750dfd7b79e|untitled:1|2|1|V|
+	import java.io.IOException;
+	import java.util.*;
+	
+	import org.apache.hadoop.fs.Path;
+	import org.apache.hadoop.conf.*;
+	import org.apache.hadoop.io.*;
+	import org.apache.hadoop.mapreduce.*;
+	import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+	import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+8ecce60677a98d5127c6505bd65df4c2|untitled:1|5|1|v|
+	import org.apache.hadoop.fs.Path;
+f7dcfacf3ebeb5b16e46572460fc83f9|untitled:1|5|1|V|
+	import org.apache.hadoop.fs.Path;
+	import org.apache.hadoop.conf.*;
+	import org.apache.hadoop.io.*;
+	import org.apache.hadoop.mapreduce.*;
+	import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+	import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+	
+686854113c06bbeb709fd03ce3aaf36d|untitled:1|58|1|V|
+	        Configuration conf = new Configuration();
+	
+	        Job job = Job.getInstance(conf, "wordcount");
+	        job.setJarByClass(WordCount.class);
+	
+	        job.setOutputKeyClass(Text.class);
+	        job.setOutputValueClass(Text.class);
+	
+	        job.setMapperClass(Map.class);
+	        job.setCombinerClass(Reduce.class);
+	        job.setReducerClass(Reduce.class);
+	
+	        job.setInputFormatClass(TextInputFormat.class);
+	        job.setOutputFormatClass(TextOutputFormat.class);
+	
+	        FileInputFormat.addInputPath(job, new Path("input"));
+	        FileOutputFormat.setOutputPath(job, new Path("output"));
+	
+	        System.exit(job.waitForCompletion(true) ? 0 : 1);
+957fa1ada23701d44a2cf22c96b400a6|untitled:1|21|1|V|
+	            String line = value.toString().replaceAll("[^a-zA-Z ]", "").toLowerCase();
+	            StringTokenizer tokenizer = new StringTokenizer(line);
+	
+	            while (tokenizer.hasMoreTokens()) {
+f9f2ddc810a9c5181e78391283300ef5|untitled:1|1|1|V|
+	
+	import java.io.IOException;
+	import java.util.*;
+	
+	import org.apache.hadoop.fs.Path;
+	import org.apache.hadoop.conf.*;
+	import org.apache.hadoop.io.*;
+	import org.apache.hadoop.mapreduce.*;
+	import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+	import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+	
+	public class WordCount {
+	
+	    public static class Map extends Mapper<LongWritable, Text, Text, Text> {
+	        private Text sortedWord = new Text();
+	        private Text wordText = new Text();
+	
+	        public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+	            String line = value.toString().replaceAll("[^a-zA-Z ]", "").toLowerCase();
+	            StringTokenizer tokenizer = new StringTokenizer(line);
+	
+	            while (tokenizer.hasMoreTokens()) {
+	                String word = tokenizer.nextToken();
+	                char[] wordArray = word.toCharArray();
+	                Arrays.sort(wordArray);
+	                sortedWord.set(new String(wordArray));
+	                wordText.set(word);
+	                context.write(sortedWord, wordText);
+	            }
+	        }
+	    }
+	
+	    public static class Reduce extends Reducer<Text, Text, Text, Text> {
+	
+	        private Text words = new Text();
+	        private StringBuilder wordsBuilder = new StringBuilder();
+	        private Set<Text> uniqueWords = new HashSet<>();
+	
+	        public void reduce(Text key, Iterable<Text> values, Context context)
+	                throws IOException, InterruptedException {
+	            for (Text val : values) {
+	                if (uniqueWords.add(val)){
+	                    wordsBuilder.append(val.toString());
+	                    wordsBuilder.append(",");
+	                }
+	            }
+	            String wordsStr = wordsBuilder.toString();
+	            words.set(wordsStr);
+	            context.write(key, words);
+	        }
+	    }
+	
+	
+	
+	    public static void main(String[] args) throws Exception {
+	        Configuration conf = new Configuration();
+	
+	        Job job = Job.getInstance(conf, "wordcount");
+	        job.setJarByClass(WordCount.class);
+	
+	        job.setOutputKeyClass(Text.class);
+	        job.setOutputValueClass(Text.class);
+	
+	        job.setMapperClass(Map.class);
+	        job.setCombinerClass(Reduce.class);
+	        job.setReducerClass(Reduce.class);
+	
+	        job.setInputFormatClass(TextInputFormat.class);
+	        job.setOutputFormatClass(TextOutputFormat.class);
+	
+	        FileInputFormat.addInputPath(job, new Path("input"));
+	        FileOutputFormat.setOutputPath(job, new Path("output"));
+	
+	        System.exit(job.waitForCompletion(true) ? 0 : 1);
+	    }
+	
+	}
+421aa90e079fa326b6494f812ad13e79|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|4|15|v|javascript
+	localhost
+3d5305fe55c229ebef6b2efe5c915160|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|9|23|V|javascript
+	    // let t1 = performance.now();
+	    // console.log(t1 - t0);
+3320c6cccb2f881e3a275268dcd0e2e6|file:///home/neo/IdeaProjects/hadoop_test/src/main/java/Anagram.java|1|1|V|java
+	
+	import java.io.IOException;
+	import java.util.*;
+	
+	import org.apache.hadoop.fs.Path;
+	import org.apache.hadoop.conf.*;
+	import org.apache.hadoop.io.*;
+	import org.apache.hadoop.mapreduce.*;
+	import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
+	import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
+	import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
+	
+	public class Anagram {
+	
+	    public static class Map extends Mapper<LongWritable, Text, Text, Text> {
+	        private Text sortedWord = new Text();
+	        private Text wordText = new Text();
+	
+	        public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+	            String line = value.toString().replaceAll("[^a-zA-Z ]", "").toLowerCase();
+	            StringTokenizer tokenizer = new StringTokenizer(line);
+	
+	            while (tokenizer.hasMoreTokens()) {
+	                String word = tokenizer.nextToken();
+	                char[] wordArray = word.toCharArray();
+	                Arrays.sort(wordArray);
+	                String wordStr = new String(wordArray);
+	                sortedWord.set(wordStr);
+	//                System.out.println("Key: "+ wordStr);
+	//                System.out.println("Value: "+ word);
+	                wordText.set(word);
+	                context.write(sortedWord, wordText);
+	            }
+	        }
+	    }
+	
+	    public static class Reduce extends Reducer<Text, Text, Text, Text> {
+	
+	        private Text words = new Text();
+	        private StringBuilder wordsBuilder = new StringBuilder();
+	        private Set<Text> uniqueWords = new HashSet<>();
+	
+	        public void reduce(Text key, Iterable<Text> values, Context context)
+	                throws IOException, InterruptedException {
+	
+	            System.out.println("Key: " + key.toString());
+	            int size = 0;
+	            for (Text val : values) {
+	                if (uniqueWords.add(val)){
+	                    System.out.println("Value: " + val.toString());
+	                    size++;
+	                    wordsBuilder.append(val.toString());
+	                    wordsBuilder.append(" ");
+	                }
+	            }
+	//            if (size > 1){
+	                String wordsStr = wordsBuilder.toString();
+	                words.set(wordsStr);
+	                context.write(key, words);
+	//            }
+	
+	        }
+	    }
+	
+	
+	
+	    public static void main(String[] args) throws Exception {
+	        Configuration conf = new Configuration();
+	
+	        Job job = Job.getInstance(conf, "anagram");
+	        job.setJarByClass(Anagram.class);
+	
+	        job.setOutputKeyClass(Text.class);
+	        job.setOutputValueClass(Text.class);
+	
+	        job.setMapperClass(Map.class);
+	        job.setCombinerClass(Reduce.class);
+	        job.setReducerClass(Reduce.class);
+	
+	        job.setInputFormatClass(TextInputFormat.class);
+	        job.setOutputFormatClass(TextOutputFormat.class);
+	
+	        FileInputFormat.addInputPath(job, new Path("input"));
+	        FileOutputFormat.setOutputPath(job, new Path("output"));
+	
+	        System.exit(job.waitForCompletion(true) ? 0 : 1);
+	    }
+	
+	}
+395b58b8e9fd64b6f41b9823de37c614|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|4|15|v|javascript
+	10.16.20.23:80
+addb82a9db13d66f21584a33675c92a5|file:///home/neo/.config/i3/scripts/lock_rick.sh|10|60|v|sh
+	meditate
+58659562c351d0db64b84fd269532cd3|file:///home/neo/.config/i3/scripts/lock_rick.sh|10|1|V|sh
+	convert -resize ~/.conch
+d683825b1af8e74469bdbddda00a281b|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|1|1|V|javascript
+	function hexToBytes(hex) {
+	  for (var bytes = [], c = 0; c < hex.length; c += 2)
+	    bytes.push(parseInt(hex.substr(c, 2), 16));
+	  return bytes;
+	}
+c1c425268e68385d1ab5074c17a94f14|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|3|5|v|javascript
+	function
+5e3c7afc2257d529df8080ee4234de89|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|3|28|v|javascript
+	on(hex) {
+42c3cd1d596a4ce9ce7dae27f883f1e4|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|3|1|V|javascript
+	    let hexToBytes = function(hex) {
+	      for (let bytes = [], c = 0; c < hex.length; c += 2)
+	        bytes.push(parseInt(hex.substr(c, 2), 16));
+	      return bytes;
+	    }
+	    
+1072edf0d0ed6864740700e9a3972415|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|15|9|V|javascript
+	        return;
+7393a267871ba9eee0d3a3998e751b84|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|7|1|V|javascript
+	async function createKeyPairFromPassword(password) {
+	  const encoder = new TextEncoder();
+	
+f8f0add5d47c69be66a4fd53ea8c0424|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|7|1|V|javascript
+	async function createKeyPairFromPassword(password) {
+	  const encoder = new TextEncoder();
+	
+	  //Get scrypt hash of password
+	  const passEnc = encoder.encode(password);
+	  const hashScrypt = await crypto.subtle.digest("SCRYPT", passEnc);
+	  const hashArrayScrypt = Array.from(new Uint8Array(hashScrypt)); // convert buffer to byte array
+	
+	  //Slice scrypt hash to 32 bytes to get the privateKey
+	  const privateKeyArray = hashArrayScrypt.slice(0, 32);
+	  const privateKey = privateKeyArray
+	    .map(b => b.toString(16).padStart(2, "0"))
+	    .join("");
+	
+	  const privateKeyEnc = hexToBytes(privateKey);
+	  const privateKeyBytes = new Uint8Array(privateKeyEnc);
+	  //Curve25519 scalar mult lower 32 bytes of sha512 hash to get public key
+	  const publicKeyPromise = await crypto.subtle.digest(
+	    "CURVE25519",
+	    privateKeyBytes
+	  );
+	  const publicKeyByteArray = Array.from(new Uint8Array(publicKeyPromise)); // convert buffer to byte array
+	
+	  const publicKey = publicKeyByteArray
+	    .map(b => b.toString(16).padStart(2, "0"))
+	    .join("");
+	
+	  // console.log("Private key: ", privateKey);
+	  // console.log("Public key: ", publicKey);
+	
+	  return privateKey.concat(publicKey);
+	}
+	
+0df93e34273b367bb63bad28c94c78d5|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|7|5|v|javascript
+	async
+4a79f76a9c27cc9b268cc7c0450017b2|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|33|1|V|javascript
+	
+	  // console.log("Private key: ", privateKey);
+	  // console.log("Public key: ", publicKey);
+96eb1edf611432f8ed6c25fce7657a39|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|46|12|V|javascript
+	        createKeyPairFromPassword(password).then(
+	            
+5bd9a3cf4b209fdcdc9bc0473e565e16|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|46|9|V|javascript
+	        );
+ebebf753e38240ff101cfc7909bd6bf4|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|4|1|V|javascript
+		let public_key = keypair.substr(64,128);
+f405230fd93d13982f4c8a8509d2c8da|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|8|1|V|javascript
+	    let postResult = Promise.resolve(
+	        $.post("http://localhost:80/index.php",
+	            {
+	                'username': username, 
+	                'public_key': public_key,
+	                'message': message,
+	                'signature': signature,
+	            },
+	            function(data){
+	                // console.log(data);
+	            })
+	    );    
+	    return postResult;
+49b2eed4f6e62066f9c143c3870c19b3|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|54|13|V|javascript
+	            {
+	                'username': username, 
+	                'public_key': public_key,
+	                'message': message,
+	                'signature': signature,
+	            },
+076c741708888b91c1314d0374985612|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|54|13|V|javascript
+	            {
+	                'username': username, 
+	                'public_key': public_key,
+	                'message': message,
+	                'signature': signature,
+	            },
+	            function(data){
+3b50089575a092553e5f1bafeb8d300f|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|53|16|v|javascript
+	"http://localhost:80/index.php"
+7cba7c5c509928c9619da3f8b458584e|file:///home/neo/Documents/diplomatiki/javascript-files/password-post.html|1|1|V|html
+	<!DOCTYPE html>
+	<html>
+	<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type = "text/javascript" src = "/home/neo/Documents/diplomatiki/javascript-files/time-password.js"></script>
+	</head>
+	<body>
+	  <div class="container"><b>Normal password</b></div>
+	  <div class="container">
+	    <label for="uname"><b>Username</b></label>
+	    <input id="username" type="text" placeholder="Enter Username" name="uname" required>
+	    <label for="psw"><b>Password</b></label>
+	    <input id="passwd" type="password" placeholder="Enter Password" name="psw" required>
+	    <button type="submit">Login</button>
+	  </div>
+	</body>
+	</html>
+49ac827de42b586c2433d6d15b143035|file:///home/neo/Documents/diplomatiki/javascript-files/auth-test.html|7|41|v|html
+	/home/neo/Documents/diplomatiki/javascript-files/time-password.js
+8b0b23e67382597d55dcf73c8f2298fe|file:///home/neo/Documents/diplomatiki/javascript-files/auth-test.html|10|29|v|html
+	Normalpassword
+9314fbd323dc6dfe87f761c71bbe44f2|file:///home/neo/Documents/diplomatiki/javascript-files/time-password.js|32|1|V|javascript
+	$(document).ready(function() {
+	  $("button").click(function() {
+	    let password = document.getElementById("passwd").value;
+	    let username = document.getElementById("username").value;
+	    timePost(username, password).then(avgTime => console.log(avgTime));
+	  });
+	});
+fe409c591e619ad8a12e8196417293fc|file:///opt/lampp/htdocs/auth-test.html|7|1|V|html
+	<script type = "text/javascript" src = "auth.js"></script>
+fa53b91ccc1b78668d5af58e1ed3a485|file:///opt/lampp/htdocs/auth-test.html|8|41|v|html
+	auth
+170068f249a9464607da33be7e15b88b|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|53|1|V|javascript
+	    let postResult = Promise.resolve(
+	        $.post(server,
+	            postData,
+	            function(data){
+	                console.log(data);
+	            })
+	    );    
+	    return postResult;
+92436ccba0621530a7973fc533319908|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|45|1|V|javascript
+	        postData.password = password;
+d02bd791f9419c21a15b065e2074ed12|file:///home/neo/Documents/diplomatiki/javascript-files/time-signature.js|3|1|V|javascript
+		let keypair = await createKeyPairFromPassword(password);
+		let public_key = keypair.substr(64,128);
+	    let signedMessageBytes = await signMessage(keypair, message);
+	    let signedMessageArray = Array.from(new Uint8Array(signedMessageBytes));
+	    let signature = signedMessageArray.map(b => b.toString(16).padStart(2, '0')).join('');
+7d2abf2d0fa7c3a0c13236910f30bc43|file:///opt/lampp/htdocs/myjs.js|5|9|v|javascript
+	signup
+b87de23b28900bea494611f7e15006c9|file:///home/neo/Documents/diplomatiki/javascript-files/create-keypair.js|40|1|V|javascript
+	async function signMessage(keypair, message) {
+	  const input = keypair.concat(message);
+	  // console.log("Signature input: ", input);
+	  const inputBuf = hexToBytes(input);
+	  const inputArray = new Uint8Array(inputBuf);
+	
+	  return crypto.subtle.digest("ED25519SIGN", inputArray);
+	}
+450c7695dbf20b676707bf5663d5def8|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|40|1|V|javascript
+	  // console.log("Signature input: ", input);
+a1f5f26b4f0fc7e7cc60290244310288|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|38|16|v|javascript
+	signMessage
+5f8274706b24511b5e3ddeb01bd573ca|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|103|1|V|javascript
+	    let bytes;
+	    for (bytes = [], c = 0; c < hex.length; c += 2)
+	        bytes.push(parseInt(hex.substr(c, 2), 16));
+	    return bytes;
+	}
+	
+	let createKeyPairFromPassword = async function(password) {
+	  const encoder = new TextEncoder();
+	
+	  //Get scrypt hash of password
+	  const passEnc = encoder.encode(password);
+	  const hashScrypt = await crypto.subtle.digest("SCRYPT", passEnc);
+	  const hashArrayScrypt = Array.from(new Uint8Array(hashScrypt)); // convert buffer to byte array
+	
+	  //Slice scrypt hash to 32 bytes to get the privateKey
+	  const privateKeyArray = hashArrayScrypt.slice(0, 32);
+	  const privateKey = privateKeyArray
+	    .map(b => b.toString(16).padStart(2, "0"))
+	    .join("");
+	
+	  const privateKeyEnc = hexToBytes(privateKey);
+	  const privateKeyBytes = new Uint8Array(privateKeyEnc);
+	  //Curve25519 scalar mult lower 32 bytes of sha512 hash to get public key
+	  const publicKeyPromise = await crypto.subtle.digest(
+	    "CURVE25519",
+	    privateKeyBytes
+	  );
+	  const publicKeyByteArray = Array.from(new Uint8Array(publicKeyPromise)); // convert buffer to byte array
+	
+	  const publicKey = publicKeyByteArray
+	    .map(b => b.toString(16).padStart(2, "0"))
+	    .join("");
+	
+	  return privateKey.concat(publicKey);
+	}
+	
+	let signMessage = async function (keypair, message) {
+	  const input = keypair.concat(message);
+	  const inputBuf = hexToBytes(input);
+	  const inputArray = new Uint8Array(inputBuf);
+	  return crypto.subtle.digest("ED25519SIGN", inputArray);
+	}
+	
+	async function signMessage(keypair, message) {
+	  const input = keypair.concat(message);
+	  // console.log("Signature input: ", input);
+	  const inputBuf = hexToBytes(input);
+	  const inputArray = new Uint8Array(inputBuf);
+	
+	  return crypto.subtle.digest("ED25519SIGN", inputArray);
+	}
+	
+	async function signup(username, password, method, server){
+	
+	    let postData = {};
+	    postData.username = username;
+	    
+	    if (method === "password"){
+	        postData.password = password;
+	    } else if (method === "keypair"){
+	        let keypair = await createKeyPairFromPassword(password);
+		    let public_key = keypair.substr(64,128);
+	        postData.public_key = public_key;
+	    } else {
+	        throw("Method not supported");
+	    }
+	    let postResult = Promise.resolve(
+	        $.post(server,
+	            postData,
+	            function(data){
+	                console.log(data);
+	            })
+	    );    
+	    return postResult;
+	}
+	
+	async function authenticate(username, password, method, server, message = ""){
+	    
+	    let postData = {};
+	    postData.username = username;
+	
+	    if (method === "password"){
+	        postData.password = password;
+	    } else if (method === "keypair"){
+	        let keypair = await createKeyPairFromPassword(password);
+	        let public_key = keypair.substr(64,128);
+	        let signedMessageBytes = await signMessage(keypair, message);
+	        let signedMessageArray = Array.from(new Uint8Array(signedMessageBytes));
+	        let signature = signedMessageArray.map(b => b.toString(16).padStart(2, '0')).join('');
+	
+	        postData.public_key = public_key;
+	        postData.signature = signature;
+	    } else {
+	        throw("Method not suppoerted");
+	    }
+	
+	    let postResult = Promise.resolve(
+	        $.post(server,
+	            postData,
+	            function(data){
+	                console.log(data);
+	            })
+	    );    
+	    return postResult;
+	}
+	
+ce625ab2cd66b6332046065fdc4e32bd|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|44|1|V|javascript
+	
+	async function signMessage(keypair, message) {
+	  const input = keypair.concat(message);
+	  // console.log("Signature input: ", input);
+	  const inputBuf = hexToBytes(input);
+	  const inputArray = new Uint8Array(inputBuf);
+	
+	  return crypto.subtle.digest("ED25519SIGN", inputArray);
+	}
+ed56bb38b0304bd1c8637e4bd94d2fcd|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|50|1|V|php
+	        $toCheck = $password_array["$username"];
+	        if ( $output == $toCheck )
+	            echo "Logged in with password";
+	        else 
+	            echo "Wrong password";
+8ca5a8a4e31a833527294613a611cb79|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|48|9|V|php
+	            p
+4dcaf58a1a6fd3555d9626cfadc42510|file:///home/neo/Documents/diplomatiki/javascript-files/myjs.js|5|9|v|javascript
+	authenticate
+71337e0141668a436dadc6f3ac8616d4|file:///home/neo/Documents/diplomatiki/javascript-files/myjs.js|5|37|v|javascript
+	keypair
+2b10a7b3e1fed59f3e98c731a9e9a9a4|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|42|29|v|php
+	$register
+68934a3e9455fa72420237eb05902327|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|31|63|v|php
+	false
+9de4a97425678c5b1288aa70c1669a64|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|56|18|v|javascript
+	register
+d56b699830e77ba53855679cb1d252da|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|86|18|v|javascript
+	login
+26c599c5ffbcfacf97b3bb8583e4724d|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|32|5|V|php
+	    $login = array_key_exists('login', $array) ? true : NULL;
+3b52f713a0add08e8423dd302d486a43|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|41|13|v|php
+	isset($register
+a3cb886d1f7929415595ff8ab65cae99|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|49|9|V|php
+	        if (isset($logi){
+63a493030253ba0c410d64fe736e39a1|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|49|13|v|php
+	isset
+9979198940c77d09758137a3feca3a86|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|49|14|v|php
+	logi
+9f4912d9948ff6e64dbf635d95e50ca9|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|57|9|V|javascript
+	        console.log(postData.mode);
+811f9d19a0e9113d1cebc23c87bbdf6c|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|56|5|V|javascript
+	        postData.mode = "register";
+ebbdd068d1e247b92c4f424e84ea1ddc|file:///home/neo/Documents/diplomatiki/javascript-files/auth.js|86|9|V|javascript
+	        postData.mode = "login";
+8370c7f6ed5efbaa2365c3eae99cceea|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|5|V|php
+	    echo "$mode";
+e4a58af87f6aca7fd6a40180f5bb876c|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|35|5|V|php
+	    /* echo "Register $register"; */
+	    /* echo "Login $login"; */
+3e5928f6b2bb28eb4fc8adb8867e6015|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|40|17|v|php
+	in_array
+bbaf782bc0edbba093ca38fcd778c4ec|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|45|17|V|php
+	                echo $output;
+7788ee13fac780335ee520fce3ff0075|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|39|1|V|php
+	        if (strcmp($mode, "register") == 0){
+	            if (array_key_exists($username, $password_array)){
+	                echo "User $username already exists!";
+	            } else{
+	                $password_array["$username"] = $output;
+	                echo "User $username registered!";
+	            }
+	        }
+	        if (strcmp($mode, "login") == 0){
+	            $toCheck = $password_array["$username"];
+	            if ( $output == $toCheck )
+	                echo "Logged in with password";
+	            else 
+	                echo "Wrong password";
+	        }
+	
+082c3f67d064f5c4df0fbd8586e73723|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|58|46|v|php
+	password_array
+26bdcc5ff0830e938ad1a778dfe58046|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|62|46|v|php
+	keypari
+78e6221f6393d1356681db398f14ce6d|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|65|51|v|php
+	output
+ed3344f9cf44498dd2291c1985a21d0c|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|70|1|V|php
+	            $toCheck = $password_array["$username"]kk
+	            if ( $output == $toCheck )
+	                echo "Logged in with password";
+	            else 
+	                echo "Wrong password";
+973f557bfbd672421ca6d8c9c2572cfe|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|72|1|V|php
+	        $command = escapeshellcmd("/usr/bin/python2.7 /opt/lampp/htdocs/verify.py $public_key $message $signature");
+	        $output = shell_exec($command);
+	        echo $output;
+4500ad05140038a30eeaf2a450fd766a|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|56|23|v|php
+	Wrong password
+99b810266e4cc8d4e7e41c00d66cced8|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|75|1|V|php
+	            $command = escapeshellcmd("/usr/bin/python2.7 /opt/lampp/htdocs/verify.py $public_key $message $signature");
+	            $output = shell_exec($command);
+	            echo $output;
+145bdf838ebf9ff66fc7597d0a87138b|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|77|17|V|php
+	                echo "Wrong public key"
+76ab7b2dd91936707598ba242075378b|file:///home/neo/Documents/diplomatiki/javascript-files/index.php|67|17|V|php
+	                echo $public_key;
+6dbf9d96da540d29ba4f424e2687452c|file:///home/neo/Documents/diplomatiki/javascript-files/myjs.js|5|87|v|javascript
+	af82
