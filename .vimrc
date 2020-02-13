@@ -1,8 +1,11 @@
 execute pathogen#infect()
+execute pathogen#helptags()
 syntax on
-colorscheme OceanicNext
 filetype plugin indent on
+colorscheme OceanicNext
 set clipboard=unnamedplus
+
+let g:tex_flavor = 'latex'
 
 " Mappings
 let mapleader = ","
