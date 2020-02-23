@@ -122,3 +122,6 @@ export YARN_RESOURCEMANAGER_OPTS="--add-modules=ALL-SYSTEM"
 setxkbmap -option caps:swapescape
 setxkbmap -option ctrl:ralt_rctrl
 
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
