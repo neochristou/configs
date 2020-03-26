@@ -125,3 +125,30 @@ setxkbmap -option ctrl:ralt_rctrl
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+# ctf-tools: PATH setup
+export PATH="$HOME/ctf-tools/bin:$PATH"
+export PATH="$HOME/wabt/bin:$PATH"
+# ctf-tools: gem install
+export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
+export PATH="$PATH:/usr/local/go/bin"
+
+# aliases
+alias install="sudo apt-get install"
+alias python="ipython"
+alias python3="ipython3"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# __conda_setup="$('/media/neo/Storage/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+# if [ $? -eq 0 ]; then
+#     eval "$__conda_setup"
+# else
+#     if [ -f "/media/neo/Storage/anaconda3/etc/profile.d/conda.sh" ]; then
+#         . "/media/neo/Storage/anaconda3/etc/profile.d/conda.sh"
+#     else
+#         export PATH="/media/neo/Storage/anaconda3/bin:$PATH"
+#     fi
+# fi
+# unset __conda_setup
+# conda deactivate
+# <<< conda initialize <<<
