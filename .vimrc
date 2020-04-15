@@ -4,14 +4,19 @@ syntax on
 filetype plugin indent on
 colorscheme OceanicNext
 set clipboard=unnamedplus
-
-let g:tex_flavor = 'latex'
+set nocompatible
+set number relativenumber
+set wildmode=longest,list,full
+set splitbelow splitright
+set showcmd
 
 " Mappings
+let maplocalleader="\<space>"
 let mapleader = ","
 map <C-o> :NERDTreeToggle<CR>
 map <C-p> :Files<CR>
 map <C-a> <esc>ggVG<CR>
+map <leader>lc :lclose<CR>
 
 " File navigation
 map <C-h> <C-w>h
@@ -32,7 +37,7 @@ set expandtab
 " Shellcheck current script
 map <leader>k :!clear && shellcheck %<CR>
 
-" Save file as sudo
+" Save file with sudo
 command! -nargs=0 Sw w !sudo tee % > /dev/null
 
 " Run spellcheck
@@ -43,6 +48,7 @@ map <leader>l :set spelllang=el<CR>
 
 " Compile and run current program (from Luke Smith)
 map <leader>cc :!compiler %<CR>
+" Set arguments before compiling
 map <leader>ca :!compiler %<space>
 
 " Basic 
@@ -50,10 +56,11 @@ map <leader>ca :!compiler %<space>
 " Ignore search case by default
 set ic
 
-set number relativenumber
-set wildmode=longest,list,full
-set splitbelow splitright
-set showcmd
+
+" Sage filetypes
+augroup filetypedetect
+  au! BufRead,BufNewFile *.sage,*.spyx,*.pyx setfiletype python
+augroup END
 
 " YCM settings
 let g:ycm_extra_conf_globlist = ['~/.vim/bundle/youcompleteme/*','/media/neo/Storage/mozilla-central/*']
@@ -234,7 +241,7 @@ imap <C-j> <Plug>(coc-snippets-expand-jump)
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-" let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ["sh"],'passive_filetypes': ["c"] }
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': ["sh"],'passive_filetypes': ["c", "py"] }
 nnoremap <C-w>e :SyntasticCheck<CR>
 nnoremap <C-w>f :SyntasticToggleMode<CR>
 let g:syntastic_always_populate_loc_list = 1
@@ -243,12 +250,23 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_enable_highlighting = 1
 
+" Vimtex config
+let g:vimtex_imaps_leader = ';'
+  call vimtex#imaps#add_map({
+    \ 'lhs' : 'bf',
+    \ 'rhs' : '\textbf{}',
+    \ 'wrapper' : 'vimtex#imaps#wrap_trivial'
+    \})
+
+" Tex flavor
+let g:tex_flavor = 'latex'
+
 " Map Esc to Caps Lock when entering vim and remap it back to normal when
 " exiting
 " au VimEnter * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
 " au VimLeave * silent! !xmodmap -e 'clear Lock' -e 'keycode 0x42 = Caps_Lock'
 "
-" Shortcuts for changin st colors 
+" Shortcuts for changing st colors 
 " map <leader>m :w <CR>:!sudo make install <CR>
 " map <leader>r dip 2ko <Esc>:read base16-st/build/base16-
 "
