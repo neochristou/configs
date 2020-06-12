@@ -12,6 +12,8 @@ super + n
 	/usr/bin/turtl
 super + b
 	nautilus
+super + y
+    /media/neo/Storage/ctf/ghidra_9.1.2_PUBLIC/ghidraRun
 super + {period, comma, slash}
 	exec sp {next, prev, play}
 # Run terminal

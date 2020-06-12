@@ -1,4 +1,3 @@
-# Luke's config for the Zoomer Shell
 
 # Enable colors and change prompt:
 autoload -U colors && colors
@@ -13,6 +12,7 @@ SAVEHIST=10000
 HISTFILE=~/.histfile
 
 export TERMINAL=/home/neo/st/st
+export EDITOR=/usr/bin/vim
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -100,55 +100,26 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/nul
 # FZF settings
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Hadoop settings
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
-export PATH=$PATH:/usr/local/java/bin
-#HADOOP ENVIRONMENT
-export HADOOP_HOME=/usr/local/hadoop
-export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
-export HADOOP_MAPRED_HOME=/usr/local/hadoop
-export HADOOP_COMMON_HOME=/usr/local/hadoop
-export HADOOP_HDFS_HOME=/usr/local/hadoop
-export YARN_HOME=/usr/local/hadoop
-export PATH=$PATH:/usr/local/hadoop/bin
-export PATH=$PATH:/usr/local/hadoop/sbin
-#HADOOP NATIVE PATH:
-export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
-export HADOOP_OPTS=“-Djava.library.path=$HADOOP_PREFIX/lib/native”
-export YARN_RESOURCEMANAGER_OPTS="--add-modules=ALL-SYSTEM"
-
+#
 # Key bindings
 setxkbmap -option caps:swapescape
 setxkbmap -option ctrl:ralt_rctrl
 
+# General env sttings
+export XDG_CONFIG_HOME="$HOME/.config"
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$PATH:/usr/local/java/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # ctf-tools: PATH setup
 export PATH="$HOME/ctf-tools/bin:$PATH"
-export PATH="$HOME/wabt/bin:$PATH"
 # ctf-tools: gem install
 export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:/usr/local/go/bin"
 
 # aliases
 alias install="sudo apt-get install"
-alias python="ipython"
-alias python3="ipython3"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-# __conda_setup="$('/media/neo/Storage/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-# if [ $? -eq 0 ]; then
-#     eval "$__conda_setup"
-# else
-#     if [ -f "/media/neo/Storage/anaconda3/etc/profile.d/conda.sh" ]; then
-#         . "/media/neo/Storage/anaconda3/etc/profile.d/conda.sh"
-#     else
-#         export PATH="/media/neo/Storage/anaconda3/bin:$PATH"
-#     fi
-# fi
-# unset __conda_setup
-# conda deactivate
-# <<< conda initialize <<<
+# alias python="ipython"
+alias python3="ipython3"

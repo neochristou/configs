@@ -235,6 +235,7 @@ bindsym $mod+Shift+semicolon exec --no-startup-id ddspawn dropdowncalc -f mono:p
 # exec_always wal -i /usr/share/backgrounds/white_ring.jpg 
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id ddspawn tmuxdd
+exec_always --no-startup-id ~/.config/i3/autotiling.py
 
 # start at boot
 exec compton
