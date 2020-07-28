@@ -12,7 +12,7 @@ SAVEHIST=10000
 HISTFILE=~/.histfile
 
 export TERMINAL=/home/neo/st/st
-export EDITOR=/usr/bin/vim
+export EDITOR=/usr/local/bin/vim
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -123,3 +123,21 @@ alias install="sudo apt-get install"
 
 # alias python="ipython"
 alias python3="ipython3"
+# export PYTHONPATH=/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages
+fpath=($fpath "/home/neo/.zfunctions")
+
+# Set Spaceship ZSH as a prompt
+# autoload -U promptinit; promptinit
+# prompt spaceship
+
+# SPACESHIP_PROMPT_ORDER=(
+#     user
+#     dir
+#     git
+# )
+# SPACESHIP_USER_SHOW=true
+#
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
+bindkey '^ ' autosuggest-execute
+bindkey '^T' autosuggest-accept
