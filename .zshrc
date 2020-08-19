@@ -45,7 +45,7 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
+    alias ls='exa --color=always --group-directories-first'
     #alias dir='dir --color=auto'
     #alias vdir='vdir --color=auto'
 
@@ -92,10 +92,8 @@ precmd(){
 	}
 
 xset +fp /home/neo/.local/share/fonts
+xset +fp /home/neo/.fonts
 xset fp rehash
-
-# Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
 # FZF settings
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
@@ -117,27 +115,23 @@ export PATH="$HOME/ctf-tools/bin:$PATH"
 # ctf-tools: gem install
 export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/home/neo/.local/bin"
 
 # aliases
 alias install="sudo apt-get install"
 
-# alias python="ipython"
-alias python3="ipython3"
-# export PYTHONPATH=/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages
+alias python3="ipython"
+export PYTHONPATH=/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages
 fpath=($fpath "/home/neo/.zfunctions")
 
-# Set Spaceship ZSH as a prompt
-# autoload -U promptinit; promptinit
-# prompt spaceship
-
-# SPACESHIP_PROMPT_ORDER=(
-#     user
-#     dir
-#     git
-# )
-# SPACESHIP_USER_SHOW=true
-#
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
 bindkey '^ ' autosuggest-execute
 bindkey '^T' autosuggest-accept
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Load zsh-syntax-highlighting; should be last.
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
