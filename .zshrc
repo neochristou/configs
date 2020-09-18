@@ -13,6 +13,7 @@ HISTFILE=~/.histfile
 
 export TERMINAL=/home/neo/st/st
 export EDITOR=/usr/local/bin/vim
+export BROWSER=/usr/bin/brave-browser
 
 # Basic auto/tab complete:
 autoload -U compinit

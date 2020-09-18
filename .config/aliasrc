@@ -1,0 +1,8 @@
+alias swapctl='setxkbmap -option ctrl:ralt_rctrl' \
+swapcaps='setxkbmap -option caps:swapescape' \
+pip-upgrade="pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U" \
+add-git-key="ssh-add /home/neo/.ssh/git" \
+cr-vpn="sudo openvpn /home/neo/cyberranges/neochr-27b5d7d7-73cb-421c-be9d-de7dfed00d13.ovpn"
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"' \
