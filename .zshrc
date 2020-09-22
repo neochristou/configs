@@ -46,13 +46,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='exa --color=always --group-directories-first'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
 
 # Change cursor shape for different vi modes.
@@ -119,9 +112,6 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/neo/.local/bin"
 
 # aliases
-alias install="sudo apt-get install"
-
-alias python3="ipython"
 export PYTHONPATH=/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages
 fpath=($fpath "/home/neo/.zfunctions")
 
@@ -135,4 +125,31 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+### ARCHIVE EXTRACTION
+# usage: ex <file>
+extract ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1   ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *.deb)       ar x $1      ;;
+      *.tar.xz)    tar xf $1    ;;
+      *.tar.zst)   unzstd $1    ;;      
+      *)           echo "'$1' cannot be extracted via extract()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}
 
