@@ -2,7 +2,8 @@
   "extensions": {
     "%2Fhome%2Fneo": [
       "exit",
-      "ccls"
+      "ccls",
+      " le"
     ],
     "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
       " e",
@@ -10,6 +11,17 @@
     ],
     "%2Fmedia%2Fneo%2FStorage%2Fmozilla-central%2Fsecurity%2Fnss%2Flib%2Ffreebl": [
       "high"
+    ],
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki%2Fauth": {
+      "js": [
+        " e"
+      ]
+    },
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki%2Fauth-webapp": [
+      " e"
+    ],
+    "%2Fhome%2Fneo%2FDocuments%2Fepl448%2Fas2": [
+      " le ll"
     ]
   },
   "outline": {
@@ -28,6 +40,39 @@
   "snippets": {
     "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki": [
       ":q"
+    ]
+  },
+  "commands": {
+    "%2Fhome%2Fneo%2Fropemporium%2Ffluff32": [
+      "interp"
+    ],
+    "%2Fhome%2Fneo%2FDocuments%2Fdiplomatiki%2Fauth": {
+      "js": [
+        "ll"
+      ]
+    },
+    "%2Fhome%2Fneo%2Fcryptohack%2Fmisc%2Fprngs": [
+      "pyhon.set",
+      "linter"
+    ],
+    "%2Fhome%2Fneo%2F": {
+      "vim%2Fbundle": [
+        "c"
+      ]
+    },
+    "%2Fhome%2Fneo%2F247ctf%2Fpwnable": [
+      "rena"
+    ]
+  },
+  "diagnostics": {
+    "%2Fhome%2Fneo%2FCTFs%2Fredpwn2020%2Fcaasino": [
+      " ["
+    ],
+    "%2Fhome%2Fneo%2Fcyberranges%2Fwork%2Focbc-cyberdrill": [
+      "r"
+    ],
+    "%2Fhome%2Fneo%2Fcyberranges%2Fwork%2Fmitre": [
+      "t"
     ]
   }
 }

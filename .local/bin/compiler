@@ -6,6 +6,15 @@
 # Compiles .tex. groff (.mom, .ms), .rmd, .md.  Opens .sent files as sent
 # presentations.  Runs scripts based on extention or shebang
 
+args=""
+if [ $# -ge 3 ]; then
+  args="$3"
+  while shift && [ -n "$3" ]; do
+    args="${args},$3"
+  done
+fi
+echo "$args"
+
 file=$(readlink -f "$1")
 dir=$(dirname "$file")
 base="${file%.*}"
@@ -30,8 +39,8 @@ case "$file" in
 	*\.tex) textype "$file" ;;
 	*\.md) pandoc "$file" --pdf-engine=xelatex -o "$base".pdf ;;
 	*config.h) sudo make install ;;
-        *\.c) cc "$file" -o "$base" && "$base" ;;
-	*\.py) python "$file" ;;
+    *\.c) clang -Wall "$file" -o "$base" && "$base" ;;
+	*\.py) python "$file" "$args";;
 	*\.go) go run "$file" ;;
 	*\.sent) setsid sent "$file" 2>/dev/null & ;;
 	*) sed 1q "$file" | grep "^#!/" | sed "s/^#!//" | xargs -r -I % "$file" ;;

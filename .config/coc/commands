@@ -1,4 +1,12 @@
+document.renameCurrentWord
+coc-rename
+python.setLinter
+python.setInterpreter
+set.interpreter
+pythonset.interpreter
+set.Interpreter
 prettier.formatFile
+python.jediPath
 snippets.openSnippetFiles
 snippets.editSnippets
 workspace.showOutput

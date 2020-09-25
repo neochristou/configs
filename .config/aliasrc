@@ -28,9 +28,8 @@ alias add-git-key="ssh-add /home/neo/.ssh/git"
 alias cr-vpn="sudo openvpn /home/neo/cyberranges/neochr-27b5d7d7-73cb-421c-be9d-de7dfed00d13.ovpn"
 # Use bat instead of cat
 alias cat=batcat
-# Stop and remove all running docker containers
-alias docker-rm-all="docker stop $(docker ps -aq) && docker rm $(docker ps -aq)"
 # Find external ip address
 alias ip-ext='curl ipinfo.io/ip' \
 # Use after command to notify when command has finished execution (e.g. command; alert)
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

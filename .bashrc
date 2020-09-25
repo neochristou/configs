@@ -2,7 +2,6 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 alias fixctl='setxkbmap -option ctrl:ralt_rctrl'
-eval $(thefuck --alias)
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -92,8 +91,8 @@ fi
 
 # some more ls aliases
 alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+# alias la='ls -A'
+# alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -122,9 +121,39 @@ fi
 export NVM_DIR="/home/neo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 export PROMPT_COMMAND="pwd > /tmp/whereami"
 
 xset +fp /home/neo/.local/share/fonts
 xset fp rehash
+
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/neo/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/neo/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/neo/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/neo/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
+# ctf-tools: PATH setup
+export PATH="$HOME/ctf-tools/bin:$PATH"
+# ctf-tools: gem install
+export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
+# source /etc/profile.d/rvm.sh

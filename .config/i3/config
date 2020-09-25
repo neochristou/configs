@@ -9,7 +9,6 @@
 #exec_always "setxkbmap -option 'grp:alt_shift_toggle' -layout us,gr -variant ,qwerty"
 
 #gaps settings
-
 gaps inner 5
 gaps outer 2
 
@@ -196,10 +195,6 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # 	}
 # }
 
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launchlistener.sh
-exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
-
 # To activate the script binding Esc to Caps lock
 # exec_always --no-startup-id killall xbindkeys && xbindkeys
 
@@ -232,10 +227,12 @@ bindsym $mod+y exec --no-startup-id ddspawn tmuxdd
 bindsym $mod+Shift+semicolon exec --no-startup-id ddspawn dropdowncalc -f mono:pixelsize=24
 
 # Background
-# exec_always wal -i /usr/share/backgrounds/white_ring.jpg 
 exec_always --no-startup-id nm-applet
 exec_always --no-startup-id ddspawn tmuxdd
 exec_always --no-startup-id ~/.config/i3/autotiling.py
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launchlistener.sh
+exec_always --no-startup-id sxhkd -c ~/.config/sxhkd/sxhkdrc
 
 # start at boot
 exec compton

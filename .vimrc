@@ -1,5 +1,14 @@
 execute pathogen#infect()
 execute pathogen#helptags()
+
+" Vimplug
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+call plug#end()
+
 syntax on
 filetype plugin indent on
 colorscheme OceanicNext
@@ -9,7 +18,15 @@ set number relativenumber
 set wildmode=longest,list,full
 set splitbelow splitright
 set showcmd
-
+let g:vimtex_compiler_latexmk = { 
+        \ 'executable' : 'latexmk',
+        \ 'options' : [ 
+        \   '-xelatex',
+        \   '-file-line-error',
+        \   '-synctex=1',
+        \   '-interaction=nonstopmode',
+        \ ],
+        \}
 " Mappings
 let maplocalleader="\<space>"
 let mapleader = ","
@@ -17,6 +34,8 @@ map <C-o> :NERDTreeToggle<CR>
 map <C-p> :Files<CR>
 map <C-a> <esc>ggVG<CR>
 map <leader>lc :lclose<CR>
+" Tagbar 
+nmap <C-u> :TagbarToggle<CR>
 
 " File navigation
 map <C-h> <C-w>h
@@ -78,9 +97,9 @@ augroup END
 let g:ycm_extra_conf_globlist = ['~/.vim/bundle/youcompleteme/*','/media/neo/Storage/mozilla-central/*']
 let g:ycm_auto_trigger = 1
 
-" CoC settings
-" Path to node
-let g:coc_node_path = "/usr/bin/nodejs"
+" " CoC settings
+" " Path to node
+let g:coc_node_path = "/usr/local/bin/node"
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -281,5 +300,4 @@ let g:tex_flavor = 'latex'
 " Shortcuts for changing st colors 
 " map <leader>m :w <CR>:!sudo make install <CR>
 " map <leader>r dip 2ko <Esc>:read base16-st/build/base16-
-"
 
