@@ -1,4 +1,3 @@
-
 # Enable colors and change prompt:
 autoload -U colors && colors
 PS1="%B%{$fg[green]%}%n@%M:%{$fg[blue]%}%~%{$reset_color%}$%b "
@@ -77,9 +76,6 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
-export NVM_DIR="/home/neo/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 # Precmd : to emulate bash's PROMPT_COMMAND variable
 precmd(){ 
 	pwd > /tmp/whereami
@@ -100,6 +96,7 @@ setxkbmap -option ctrl:ralt_rctrl
 # General env sttings
 export XDG_CONFIG_HOME="$HOME/.config"
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+
 export PATH=$PATH:/usr/local/java/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
@@ -112,7 +109,7 @@ export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/home/neo/.local/bin"
 
 # aliases
-export PYTHONPATH=/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages
+export PYTHONPATH="/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages"
 fpath=($fpath "/home/neo/.zfunctions")
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
