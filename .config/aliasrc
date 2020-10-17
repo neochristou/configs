@@ -12,6 +12,8 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 # Ripgrep instead of grep
 alias grep='rg'
+# fdfind instead of find
+alias find='fdfind'
 # Exa instead of ls
 alias ls='exa --color=always --group-directories-first'
 # Exa view all files recursively as tree
