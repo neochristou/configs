@@ -33,7 +33,7 @@ super + shift + o
 
 # Change keyboard language
 super + space
-	~/.config/i3/i3-keyboard-layout/i3-keyboard-layout cycle us gr
+	~/.config/i3/i3-keyboard-layout/i3-keyboard-layout cycle us gr && swapcaps
 
 # Open new terminal at current directory
 super + BackSpace

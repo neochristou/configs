@@ -105,7 +105,7 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 export PATH="$HOME/ctf-tools/bin:$PATH"
 # ctf-tools: gem install
 export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
-export PATH="$PATH:/usr/local/go/bin"
+export PATH="$PATH:/home/neo/go/bin"
 export PATH="$PATH:/home/neo/.local/bin"
 
 # aliases
@@ -122,6 +122,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+
+# thefuck activation
+eval $(thefuck --alias)
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>

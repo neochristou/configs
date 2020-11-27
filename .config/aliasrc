@@ -36,6 +36,8 @@ alias cat=batcat
 alias ip-ext='curl ipinfo.io/ip' \
 # Copy tmux key configs
 alias copy-tmuxcfg='head -19 ~/.tmux.conf | xclip -sel c'
+# open sage container with sage command
+alias sage='docker run -it sagemath/sagemath:latest'
 # Use after command to notify when command has finished execution (e.g. command; alert)
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
