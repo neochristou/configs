@@ -10,7 +10,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.histfile
 
-export TERMINAL=/home/neo/st/st
+export TERMINAL=$HOME/st/st
 export EDITOR=/usr/local/bin/vim
 export BROWSER=/usr/bin/brave-browser
 
@@ -81,8 +81,8 @@ precmd(){
 	pwd > /tmp/whereami
 	}
 
-xset +fp /home/neo/.local/share/fonts
-xset +fp /home/neo/.fonts
+xset +fp $HOME/.local/share/fonts
+xset +fp $HOME/.fonts
 xset fp rehash
 
 # FZF settings
@@ -104,9 +104,9 @@ export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 # ctf-tools: PATH setup
 export PATH="$HOME/ctf-tools/bin:$PATH"
 # ctf-tools: gem install
-export PATH="$PATH:/home/neo/.gem/ruby/2.7.0/bin"
-export PATH="$PATH:/home/neo/go/bin"
-export PATH="$PATH:/home/neo/.local/bin"
+export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
+export PATH="$PATH:$HOME/go/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # aliases
 export PYTHONPATH="/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages"
