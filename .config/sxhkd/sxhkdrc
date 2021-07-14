@@ -7,11 +7,13 @@ super + u
 super + g
 	$BROWSER
 super + m
-	spotify 
+	spotify
 super + n
-    sh -c '$BROWSER https://www.notion.so/'	
+    sh -c '$BROWSER https://www.notion.so/'
 super + b
 	nautilus
+super + shift + y
+	screenkey
 super + {period, comma, slash}
 	exec sp {next, prev, play}
 # Run terminal
@@ -20,14 +22,14 @@ super + Return
 # Window manager - kill window
 super + shift + q
 	i3 kill
-# Start dmenu 
-super + d 
+# Start dmenu
+super + d
 	exec dmenu_run
 
 super + grave
 	dmenuunicode
 
-# Restart network manager 
+# Restart network manager
 super + shift + o
 	sudo systemctl restart network-manager.service
 

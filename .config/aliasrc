@@ -5,7 +5,7 @@ alias egrep='egrep --color=auto'
 alias install="sudo apt-get install"
 alias diff="colordiff"
 # navigation
-alias ..='cd ..' 
+alias ..='cd ..'
 alias ...='cd ../..'
 alias .3='cd ../../..'
 alias .4='cd ../../../..'
@@ -21,9 +21,9 @@ alias lt='exa -aT --color=always --group-directories-first'
 # Use iphython instead of python
 alias python3="ipython"
 # Set right alt_ctrl to ctrl
-alias swapctl="setxkbmap -option ctrl:ralt_rctrl" 
+alias swapctl="setxkbmap -option ctrl:ralt_rctrl"
 # Swap caps with escape
-alias swapcaps="setxkbmap -option caps:swapescape" 
+alias swapcaps="setxkbmap -option caps:swapescape"
 # Upgrade all pip packages
 alias pip-upgrade="pip freeze --user | cut -d'=' -f1 | xargs -n1 pip install -U"
 # Add git key to ssh agent
@@ -40,4 +40,5 @@ alias copy-tmuxcfg='head -19 ~/.tmux.conf | xclip -sel c'
 alias sage='docker run -it sagemath/sagemath:latest'
 # Use after command to notify when command has finished execution (e.g. command; alert)
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias vim='nvim'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'

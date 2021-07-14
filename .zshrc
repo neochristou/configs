@@ -77,7 +77,7 @@ bindkey '^e' edit-command-line
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
 # Precmd : to emulate bash's PROMPT_COMMAND variable
-precmd(){ 
+precmd(){
 	pwd > /tmp/whereami
 	}
 
@@ -96,6 +96,9 @@ setxkbmap -option ctrl:ralt_rctrl
 # General env sttings
 export XDG_CONFIG_HOME="$HOME/.config"
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export ANDROID_HOME=/media/neo/Storage/android-studio
+export ANDROID_AVD_HOME=/media/neo/Storage/.android
+export ANDROID_SDK_HOME=/media/neo/Storage
 
 export PATH=$PATH:/usr/local/java/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
@@ -145,11 +148,61 @@ extract ()
       *.7z)        7z x $1      ;;
       *.deb)       ar x $1      ;;
       *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;      
+      *.tar.zst)   unzstd $1    ;;
       *)           echo "'$1' cannot be extracted via extract()" ;;
     esac
   else
     echo "'$1' is not a valid file"
   fi
 }
+
+export WEENIX_DIR=/home/neo/phd/classes/csci1670/weenix-2021-neochristou
+
+function wg {
+    if [[ $# -eq 1 ]]; then
+        if [[ "$1" != "-n" ]]; then
+            echo 'incorrect usage'
+            return 127
+        fi
+    fi
+
+    # WEENIX_DIR=/vagrant
+
+    if [[ "$1" = "-n" ]]; then
+        $WEENIX_DIR/weenix -n -d gdb; pkill qemu
+    else
+        $WEENIX_DIR/weenix -d gdb; pkill qemu
+    fi
+}
+
+function rw {
+     if [[ $# -eq 1 ]]; then
+        if [[ "$1" != "-n" ]]; then
+            echo 'incorrect usage' ]]
+            return 127
+        fi
+    fi
+
+    # WEENIX_DIR=/vagrant
+
+    if [[ "$1" = "-n" ]]; then
+        $WEENIX_DIR/weenix -n;
+    else
+        $WEENIX_DIR/weenix;
+    fi
+}
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/neo/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/neo/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/neo/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/neo/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
