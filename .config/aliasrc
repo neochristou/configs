@@ -13,7 +13,7 @@ alias .5='cd ../../../../..'
 # Ripgrep instead of grep
 alias grep='rg'
 # fdfind instead of find
-alias find='fdfind'
+alias find='fd'
 # Exa instead of ls
 alias ls='exa --color=always --group-directories-first'
 # Exa view all files recursively as tree
@@ -31,7 +31,7 @@ alias add-git-key="ssh-add /home/neo/.ssh/git"
 # Connect to cyberranges vpn
 alias cr-vpn="sudo openvpn /home/neo/cyberranges/neochr-27b5d7d7-73cb-421c-be9d-de7dfed00d13.ovpn"
 # Use bat instead of cat
-alias cat=batcat
+alias cat='bat'
 # Find external ip address
 alias ip-ext='curl ipinfo.io/ip' \
 # Copy tmux key configs

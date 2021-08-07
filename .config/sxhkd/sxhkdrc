@@ -24,7 +24,7 @@ super + shift + q
 	i3 kill
 # Start dmenu
 super + d
-	exec dmenu_run
+	exec dmenu_recency
 
 super + grave
 	dmenuunicode

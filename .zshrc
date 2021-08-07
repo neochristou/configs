@@ -1,5 +1,25 @@
+## Options section
+setopt correct                                                  # Auto correct mistakes
+setopt extendedglob                                             # Extended globbing. Allows using regular expressions with *
+setopt nocaseglob                                               # Case insensitive globbing
+setopt rcexpandparam                                            # Array expension with parameters
+setopt nocheckjobs                                              # Don't warn about running processes when exiting
+setopt numericglobsort                                          # Sort filenames numerically when it makes sense
+setopt histignorealldups                                        # If a new command is a duplicate, remove the older one
+setopt inc_append_history                                       # save commands are added to the history immediately, otherwise only when shell exits.
+
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'       # Case insensitive tab completion
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"         # Colored completion (different colors for dirs/files/etc)
+zstyle ':completion:*' rehash true                              # automatically find new executables in path
+# Speed up completions
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
 # Enable colors and change prompt:
-autoload -U colors && colors
+autoload -U compinit colors zcalc
+compinit -d
+colors
+
 PS1="%B%{$fg[green]%}%n@%M:%{$fg[blue]%}%~%{$reset_color%}$%b "
 
 setopt appendhistory autocd
@@ -11,8 +31,8 @@ SAVEHIST=10000
 HISTFILE=~/.histfile
 
 export TERMINAL=$HOME/st/st
-export EDITOR=/usr/local/bin/vim
-export BROWSER=/usr/bin/brave-browser
+export EDITOR=/usr/bin/nvim
+export BROWSER=/usr/bin/brave
 
 # Basic auto/tab complete:
 autoload -U compinit
@@ -81,10 +101,6 @@ precmd(){
 	pwd > /tmp/whereami
 	}
 
-xset +fp $HOME/.local/share/fonts
-xset +fp $HOME/.fonts
-xset fp rehash
-
 # FZF settings
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -l -g ""'
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -100,22 +116,13 @@ export ANDROID_HOME=/media/neo/Storage/android-studio
 export ANDROID_AVD_HOME=/media/neo/Storage/.android
 export ANDROID_SDK_HOME=/media/neo/Storage
 
-export PATH=$PATH:/usr/local/java/bin
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-# ctf-tools: PATH setup
-export PATH="$HOME/ctf-tools/bin:$PATH"
-# ctf-tools: gem install
-export PATH="$PATH:$HOME/.gem/ruby/2.7.0/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="$PATH:$HOME/.local/bin"
 
 # aliases
-export PYTHONPATH="/home/neo/.local/lib/python3.7/site-packages:/home/neo/.local/lib/python3.8/site-packages"
 fpath=($fpath "/home/neo/.zfunctions")
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#c0c0c0"
 bindkey '^ ' autosuggest-execute
 bindkey '^T' autosuggest-accept
@@ -125,9 +132,121 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Load zsh-syntax-highlighting; should be last.
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
+# Use history substring search
+source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+# bind UP and DOWN arrow keys to history substring search
+zmodload zsh/terminfo
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
-# thefuck activation
-eval $(thefuck --alias)
+# Offer to install missing package if command is not found
+if [[ -r /usr/share/zsh/functions/command-not-found.zsh ]]; then
+    source /usr/share/zsh/functions/command-not-found.zsh
+    export PKGFILE_PROMPT_INSTALL_MISSING=1
+fi
+
+# Set terminal window and tab/icon title
+#
+# usage: title short_tab_title [long_window_title]
+#
+# See: http://www.faqs.org/docs/Linux-mini/Xterm-Title.html#ss3.1
+# Fully supports screen and probably most modern xterm and rxvt
+# (In screen, only short_tab_title is used)
+function title {
+  emulate -L zsh
+  setopt prompt_subst
+
+  [[ "$EMACS" == *term* ]] && return
+
+  # if $2 is unset use $1 as default
+  # if it is set and empty, leave it as is
+  : ${2=$1}
+
+  case "$TERM" in
+    xterm*|putty*|rxvt*|konsole*|ansi|mlterm*|alacritty|st*)
+      print -Pn "\e]2;${2:q}\a" # set window name
+      print -Pn "\e]1;${1:q}\a" # set tab name
+      ;;
+    screen*|tmux*)
+      print -Pn "\ek${1:q}\e\\" # set screen hardstatus
+      ;;
+    *)
+    # Try to use terminfo to set the title
+    # If the feature is available set title
+    if [[ -n "$terminfo[fsl]" ]] && [[ -n "$terminfo[tsl]" ]]; then
+      echoti tsl
+      print -Pn "$1"
+      echoti fsl
+    fi
+      ;;
+  esac
+}
+
+
+ZSH_THEME_TERM_TAB_TITLE_IDLE="%15<..<%~%<<" #15 char left truncated PWD
+ZSH_THEME_TERM_TITLE_IDLE="%n@%m:%~"
+
+# Runs before showing the prompt
+function mzc_termsupport_precmd {
+  [[ "${DISABLE_AUTO_TITLE:-}" == true ]] && return
+  title $ZSH_THEME_TERM_TAB_TITLE_IDLE $ZSH_THEME_TERM_TITLE_IDLE
+}
+
+# Runs before executing the command
+function mzc_termsupport_preexec {
+  [[ "${DISABLE_AUTO_TITLE:-}" == true ]] && return
+
+  emulate -L zsh
+
+  # split command into array of arguments
+  local -a cmdargs
+  cmdargs=("${(z)2}")
+  # if running fg, extract the command from the job description
+  if [[ "${cmdargs[1]}" = fg ]]; then
+    # get the job id from the first argument passed to the fg command
+    local job_id jobspec="${cmdargs[2]#%}"
+    # logic based on jobs arguments:
+    # http://zsh.sourceforge.net/Doc/Release/Jobs-_0026-Signals.html#Jobs
+    # https://www.zsh.org/mla/users/2007/msg00704.html
+    case "$jobspec" in
+      <->) # %number argument:
+        # use the same <number> passed as an argument
+        job_id=${jobspec} ;;
+      ""|%|+) # empty, %% or %+ argument:
+        # use the current job, which appears with a + in $jobstates:
+        # suspended:+:5071=suspended (tty output)
+        job_id=${(k)jobstates[(r)*:+:*]} ;;
+      -) # %- argument:
+        # use the previous job, which appears with a - in $jobstates:
+        # suspended:-:6493=suspended (signal)
+        job_id=${(k)jobstates[(r)*:-:*]} ;;
+      [?]*) # %?string argument:
+        # use $jobtexts to match for a job whose command *contains* <string>
+        job_id=${(k)jobtexts[(r)*${(Q)jobspec}*]} ;;
+      *) # %string argument:
+        # use $jobtexts to match for a job whose command *starts with* <string>
+        job_id=${(k)jobtexts[(r)${(Q)jobspec}*]} ;;
+    esac
+
+    # override preexec function arguments with job command
+    if [[ -n "${jobtexts[$job_id]}" ]]; then
+      1="${jobtexts[$job_id]}"
+      2="${jobtexts[$job_id]}"
+    fi
+  fi
+
+  # cmd name only, or if this is sudo or ssh, the next cmd
+  local CMD=${1[(wr)^(*=*|sudo|ssh|mosh|rake|-*)]:gs/%/%%}
+  local LINE="${2:gs/%/%%}"
+
+  title '$CMD' '%100>...>$LINE%<<'
+}
+
+autoload -U add-zsh-hook
+add-zsh-hook precmd mzc_termsupport_precmd
+add-zsh-hook preexec mzc_termsupport_preexec
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -155,54 +274,3 @@ extract ()
     echo "'$1' is not a valid file"
   fi
 }
-
-export WEENIX_DIR=/home/neo/phd/classes/csci1670/weenix-2021-neochristou
-
-function wg {
-    if [[ $# -eq 1 ]]; then
-        if [[ "$1" != "-n" ]]; then
-            echo 'incorrect usage'
-            return 127
-        fi
-    fi
-
-    # WEENIX_DIR=/vagrant
-
-    if [[ "$1" = "-n" ]]; then
-        $WEENIX_DIR/weenix -n -d gdb; pkill qemu
-    else
-        $WEENIX_DIR/weenix -d gdb; pkill qemu
-    fi
-}
-
-function rw {
-     if [[ $# -eq 1 ]]; then
-        if [[ "$1" != "-n" ]]; then
-            echo 'incorrect usage' ]]
-            return 127
-        fi
-    fi
-
-    # WEENIX_DIR=/vagrant
-
-    if [[ "$1" = "-n" ]]; then
-        $WEENIX_DIR/weenix -n;
-    else
-        $WEENIX_DIR/weenix;
-    fi
-}
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/neo/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/neo/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/neo/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/neo/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-

@@ -28,7 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:HDMI1}
 width = 100%
 height = 27
 ;offset-x = 1%
@@ -47,11 +47,14 @@ line-color = #f00
 border-top-size = 2
 border-color = #6b0202
 
+border-bottom = 0
+
 padding-left = 0
 padding-right = 0
 
 module-margin-left = 1
 module-margin-right = 1
+module-margin-bottom = 5
 
 font-0 = FontAwesome:style=Regular
 font-1 = unifont:fontformat=truetype:size=10:antialias=true;0
@@ -409,7 +412,7 @@ type = custom/script
 interval = 1
 format-prefix = " "
 format = <label>
-exec = /usr/bin/python3.7 ~/.config/polybar/scripts/spotify_status.py -t 20 -f '{song}: {artist}'
+exec = /usr/bin/python3 ~/.config/polybar/scripts/spotify_status.py -t 20 -f '{song}: {artist}'
 format-underline = #1db954
 
 [module/powermenu]
